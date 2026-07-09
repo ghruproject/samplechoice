@@ -124,17 +124,23 @@ manual review identifies a specific plasmid-analysis reason.
 
 ## 7. Ranking order
 
-Rank candidates in this order:
+Rank candidates in this order. When a fixed sequencing capacity is provided,
+apply the cutoff with the same order and keep unselected rows as alternates:
 
 1. tier: Tier1_CR, then Tier2_MDR, then Tier3_nonMDR_resistant, then
    Tier4_pansusceptible;
 2. primary candidates before secondary candidates;
-3. wider profile distribution first, using the number of sites and isolates
-   sharing the same resistance/plasmid combination;
-4. convergent signal: resistance genes plus virulence markers;
-5. carbapenemase or ESBL gene signal;
-6. metadata completeness and sequencing feasibility;
-7. isolate identifier as a deterministic tie-breaker.
+3. sentinel-site balance, giving priority to sites with fewer already selected
+   isolates within the same tier/batch;
+4. plasmid-profile diversity, giving priority to plasmid profiles and `RP x PP`
+   combinations not already represented;
+5. wider profile distribution, using the number of sites and isolates sharing
+   the same resistance/plasmid combination;
+6. convergent signal: resistance genes plus virulence markers;
+7. carbapenemase or ESBL gene signal;
+8. metadata completeness and sequencing feasibility;
+9. ST as a late tie-breaker, only after tier, site balance, plasmid profile,
+   and biological flags have been considered.
 
 ## 8. Human review and deduplication
 

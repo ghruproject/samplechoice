@@ -1,0 +1,21 @@
+priority_rank,selection_batch,accession_no,laboratory,country,st,tier,rp_code,PP_code,Plasmids,etp_mic,ipm_mic,mem_mic,col_mic,ctx_mic,caz_mic,cip_mic,gen_mic,sxt_mic,tcy_mic,amp_mic,carbapenemase_genes,esbl_genes,virulence_genes,qc_status
+1,Primary,SIM_AGR_001,AGROSAVIA,Colombia,ST307,Tier1_CR,RP1,PP1,"IncFIB(K), IncFII(K)",R,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+2,Primary,SIM_RITM_001,RITM,Philippines,ST147,Tier1_CR,RP1,PP2,"IncFIB(K), IncN",I,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,ybt,PASSED
+3,Primary,SIM_KIMS_001,KIMS,India,ST231,Tier1_CR,RP1,PP1,"IncFIB(K), IncFII(K)",R,R,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,ybt;clb,PASSED
+4,Primary,SIM_IBD_001,IBADAN,Nigeria,ST101,Tier1_CR,RP1,PP3,"IncFII(K), IncN",R,S,I,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,,PASSED
+5,Primary,SIM_CGPS_001,CGPS,United Kingdom,ST15,Tier1_CR,RP2,PP4,"IncR, Col440II",S,R,S,S,R,R,R,S,R,S,R,blaKPC-3,blaSHV-12,,PASSED
+6,Secondary,SIM_AGR_002,AGROSAVIA,Colombia,ST307,Tier1_CR,RP1,PP1,"IncFIB(K), IncFII(K)",R,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+7,Secondary,SIM_RITM_002,RITM,Philippines,ST147,Tier1_CR,RP1,PP2,"IncFIB(K), IncN",I,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,ybt,PASSED
+8,Primary,SIM_KIMS_002,KIMS,India,ST231,Tier1_CR,RP3,PP5,"IncHI1B, IncFIB(K)",R,R,R,S,R,R,R,R,R,R,R,blaOXA-181,blaCTX-M-15,rmpA;iro,PASSED
+9,Primary,SIM_AGR_003,AGROSAVIA,Colombia,ST15,Tier2_MDR,RP4,PP6,IncFIA,S,S,S,R,R,R,R,S,R,S,R,,blaCTX-M-15,,PASSED
+10,Primary,SIM_RITM_003,RITM,Philippines,ST11,Tier2_MDR,RP4,PP7,IncFII(K),S,S,S,S,R,R,R,R,R,S,R,,blaSHV-12,,PASSED
+11,Primary,SIM_KIMS_003,KIMS,India,ST395,Tier2_MDR,RP5,PP8,IncR,S,S,S,S,R,S,R,S,R,R,R,,blaCTX-M-14,,PASSED
+12,Primary,SIM_IBD_002,IBADAN,Nigeria,ST17,Tier2_MDR,RP4,PP9,IncFIA,S,S,S,S,R,R,S,R,R,S,R,,blaCTX-M-15,,PASSED
+13,Primary,SIM_CGPS_002,CGPS,United Kingdom,ST35,Tier2_MDR,RP6,PP10,"IncFIB(K), IncR",S,S,S,S,S,S,R,R,R,R,R,,blaSHV-12,,PASSED
+14,Primary,SIM_AGR_004,AGROSAVIA,Colombia,ST45,Tier3_nonMDR_resistant,RP7,PP11,IncQ1,S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
+15,Primary,SIM_RITM_004,RITM,Philippines,ST23,Tier3_nonMDR_resistant,RP8,PP12,"IncHI1B, IncFIB(K)",S,S,S,S,S,S,S,S,S,R,R,,,rmpA;iro,PASSED
+16,Primary,SIM_IBD_003,IBADAN,Nigeria,ST48,Tier3_nonMDR_resistant,RP7,PP13,IncX3,S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
+17,Primary,SIM_KIMS_004,KIMS,India,ST23,Tier4_pansusceptible,RP9,PP14,"IncHI1B, IncFIB(K)",S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
+18,Primary,SIM_AGR_005,AGROSAVIA,Colombia,ST86,Tier4_pansusceptible,RP9,PP15,IncFIB(K),S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+19,Primary,SIM_RITM_005,RITM,Philippines,ST35,Tier4_pansusceptible,RP9,PP16,NO_PLASMID_CALL,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+20,Primary,SIM_IBD_004,IBADAN,Nigeria,ST45,Tier4_pansusceptible,RP9,PP17,IncQ1,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED

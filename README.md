@@ -33,6 +33,16 @@ Install the minimal Python dependencies in your preferred environment:
 python3 -m pip install -r requirements.txt
 ```
 
+Run the simulated end-to-end demo:
+
+```bash
+bash scripts/run_demo.sh
+```
+
+This writes a ranked long-read selection from
+`examples/simulated_june_priority.csv` and a plasmid set-cover demonstration to
+`outputs/`.
+
 The script accepts either:
 
 - the June-style priority workbook/CSV, with columns such as `accession_no`,
@@ -49,6 +59,7 @@ Run the selector on a CSV or Excel file:
 ```bash
 python3 scripts/select_longread_samples.py \
   --input examples/example_isolates.csv \
+  --n-select 10 \
   --output outputs/example_priority.csv
 ```
 
@@ -58,8 +69,11 @@ that sheet exists:
 ```bash
 python3 scripts/select_longread_samples.py \
   --input isolate_priority_longread_2026-05-22.xlsx \
+  --n-select 96 \
   --output outputs/priority.csv
 ```
+
+Omit `--n-select` when you want the full ranked table without a fixed cutoff.
 
 Use `--sheet-name` only when you want a specific sheet:
 
@@ -73,6 +87,8 @@ python3 scripts/select_longread_samples.py \
 ## Main documents
 
 - [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
+- [Selection algorithm](docs/selection_algorithm.md)
+- [Worked simulated example](docs/worked_simulated_example.md)
 - [Integrated input dataframe schema](docs/input_schema.md)
 - [June-style priority sheet input](docs/june_priority_sheet_input.md)
 - [Optional plasmid set-cover layer](docs/plasmid_set_cover.md)

@@ -306,6 +306,90 @@ def build_priority_table(df: pd.DataFrame, config: dict[str, Any], args: argpars
         audit = df[[id_col] + original_cols_to_keep].rename(columns={id_col: "isolate_id"})
         out = out.merge(audit, on="isolate_id", how="left", suffixes=("", "_input"))
 
+    if args.n_select:
+        out = apply_balanced_cutoff(out, args.n_select)
+
+    return out
+
+
+def apply_balanced_cutoff(priority: pd.DataFrame, n_select: int) -> pd.DataFrame:
+    if n_select < 1:
+        raise SystemExit("--n-select must be at least 1")
+
+    out = priority.copy()
+    out["selected_for_sequencing"] = "no"
+    out["selection_rank"] = 0
+    out["selection_reason"] = ""
+
+    remaining = set(out.index)
+    selected: list[int] = []
+    site_counts: Counter[str] = Counter()
+    site_tier_counts: Counter[tuple[str, str]] = Counter()
+    plasmid_counts: Counter[str] = Counter()
+    rp_pp_counts: Counter[tuple[str, str]] = Counter()
+    st_counts: Counter[str] = Counter()
+
+    while remaining and len(selected) < min(n_select, len(out)):
+        scored = []
+        for idx in remaining:
+            row = out.loc[idx]
+            tier = str(row["computed_tier"])
+            site = str(row["site"])
+            pp = str(row["computed_pp_code"])
+            rp = str(row["computed_rp_code"])
+            st = str(row["st"]) if has_signal(row.get("st")) else "NO_ST"
+            batch = str(row["selection_batch"])
+            scored.append(
+                (
+                    (
+                        TIER_ORDER.get(tier, 9),
+                        0 if batch == "Primary" else 1,
+                        site_counts[site],
+                        site_tier_counts[(site, tier)],
+                        plasmid_counts[pp],
+                        rp_pp_counts[(rp, pp)],
+                        st_counts[st],
+                        -int(row["combo_n_sites"]),
+                        -int(row["combo_n_isolates"]),
+                        0 if bool(row["convergent_signal"]) else 1,
+                        0 if bool(row["resistance_gene_signal"]) else 1,
+                        -float(row["metadata_score"]),
+                        str(row["isolate_id"]),
+                    ),
+                    idx,
+                )
+            )
+
+        _, chosen_idx = min(scored)
+        chosen = out.loc[chosen_idx]
+        selected.append(chosen_idx)
+        remaining.remove(chosen_idx)
+
+        tier = str(chosen["computed_tier"])
+        site = str(chosen["site"])
+        pp = str(chosen["computed_pp_code"])
+        rp = str(chosen["computed_rp_code"])
+        st = str(chosen["st"]) if has_signal(chosen.get("st")) else "NO_ST"
+
+        site_counts[site] += 1
+        site_tier_counts[(site, tier)] += 1
+        plasmid_counts[pp] += 1
+        rp_pp_counts[(rp, pp)] += 1
+        st_counts[st] += 1
+
+        rank = len(selected)
+        out.at[chosen_idx, "selected_for_sequencing"] = "yes"
+        out.at[chosen_idx, "selection_rank"] = rank
+        out.at[chosen_idx, "selection_reason"] = (
+            f"{tier}; {chosen['selection_batch']}; balanced site {site}; "
+            f"plasmid profile {pp}; RP {rp}; ST {st}"
+        )
+
+    out["selection_rank_sort"] = out["selection_rank"].map(lambda x: int(x) if int(x) > 0 else 999999)
+    out = out.sort_values(
+        by=["selected_for_sequencing", "selection_rank_sort", "priority_rank"],
+        ascending=[False, True, True],
+    ).drop(columns=["selection_rank_sort"])
     return out
 
 
@@ -390,6 +474,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--st-column")
     parser.add_argument("--plasmid-column")
     parser.add_argument("--profile-tested-fraction", type=float)
+    parser.add_argument(
+        "--n-select",
+        type=int,
+        help="Number of isolates to flag for sequencing after prioritisation and balanced cutoff.",
+    )
     return parser.parse_args()
 
 
@@ -403,6 +492,8 @@ def main() -> None:
     print(f"Wrote {len(priority)} ranked isolates to {args.output}")
     print(priority["selection_batch"].value_counts().to_string())
     print(priority["computed_tier"].value_counts().to_string())
+    if args.n_select:
+        print(priority["selected_for_sequencing"].value_counts().to_string())
 
 
 if __name__ == "__main__":

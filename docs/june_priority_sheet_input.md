@@ -35,8 +35,12 @@ sheet:
 ```bash
 python3 scripts/select_longread_samples.py \
   --input isolate_priority_longread_2026-05-22.xlsx \
+  --n-select 96 \
   --output outputs/priority.csv
 ```
+
+Omit `--n-select` to write the full ranked table without flagging a fixed
+sequencing set.
 
 You can still choose a sheet explicitly:
 
@@ -53,4 +57,3 @@ The June-style sheet is enough to reproduce the tier/profile/plasmid-profile
 ranking. It is not enough by itself for final confirmation unless ST, country,
 AMR gene, virulence, culture/DNA availability, and sequencing feasibility have
 also been joined or checked elsewhere.
-
