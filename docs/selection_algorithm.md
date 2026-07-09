@@ -9,14 +9,15 @@ The intended decision order is:
    Tier2_MDR, then Tier3_nonMDR_resistant, then Tier4_pansusceptible.
 2. **Primary profile coverage before duplicates.** Prefer the first isolate for
    each sentinel-site `RP x PP` combination before repeated candidates.
-3. **Sentinel-site balance.** Within the same tier and batch, choose from sites
-   with fewer selected isolates so one high-volume site does not consume the
-   list.
+3. **Within-partner sentinel-site balance.** Within the same tier and batch,
+   choose from sites with fewer selected isolates so one high-volume site does
+   not consume the list.
 4. **Plasmid-profile diversity.** Prefer plasmid profiles and `RP x PP`
    combinations not already selected.
 5. **Biological flags.** Prefer convergent isolates and AMR-gene-positive
    isolates when those fields are available.
-6. **Metadata completeness.** Prefer rows with country/site/ST fields present.
+6. **Metadata completeness.** Prefer rows with country, sentinel-site, and ST
+   fields present.
 7. **ST only as a late tie-breaker.** Prefer STs not already selected, but do
    not let ST override tier, sentinel balance, or plasmid-profile diversity.
 
@@ -43,4 +44,3 @@ If `PP_code` is absent but a plasmid column such as `Plasmids` or
 
 Rows with no plasmid call are coded as `NO_PLASMID_CALL`. This means missing
 plasmid data are visible and do not get interpreted as true plasmid absence.
-

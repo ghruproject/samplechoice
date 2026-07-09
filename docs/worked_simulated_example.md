@@ -1,7 +1,7 @@
 # Worked simulated example
 
-This example demonstrates the intended workflow on a small June-style input
-table:
+This example demonstrates the intended workflow on a single-partner June-style
+input table:
 
 `examples/simulated_june_priority.csv`
 
@@ -46,39 +46,39 @@ In this simulated run the selected set is:
 
 | Rank | Isolate | Site | Tier | Plasmid profile | ST |
 | --- | --- | --- | --- | --- | --- |
-| 1 | SIM_AGR_036 | AGROSAVIA | Tier1_CR | PP12 | ST35 |
-| 2 | SIM_CGPS_005 | CGPS | Tier1_CR | PP10 | ST15 |
-| 3 | SIM_IBD_004 | IBADAN | Tier1_CR | PP8 | ST307 |
-| 4 | SIM_KIMS_003 | KIMS | Tier1_CR | PP6 | ST48 |
-| 5 | SIM_RITM_007 | RITM | Tier1_CR | PP14 | ST86 |
-| 6 | SIM_IBD_009 | IBADAN | Tier1_CR | PP3 | ST11 |
-| 7 | SIM_KIMS_008 | KIMS | Tier1_CR | PP1 | ST147 |
-| 8 | SIM_RITM_032 | RITM | Tier1_CR | PP4 | ST17 |
-| 9 | SIM_AGR_001 | AGROSAVIA | Tier1_CR | PP2 | ST101 |
-| 10 | SIM_CGPS_015 | CGPS | Tier1_CR | PP15 | ST512 |
-| 11 | SIM_AGR_011 | AGROSAVIA | Tier1_CR | PP7 | ST258 |
-| 12 | SIM_CGPS_025 | CGPS | Tier1_CR | PP5 | ST45 |
-| 13 | SIM_IBD_029 | IBADAN | Tier1_CR | PP13 | ST23 |
-| 14 | SIM_KIMS_013 | KIMS | Tier1_CR | PP11 | ST395 |
-| 15 | SIM_RITM_027 | RITM | Tier1_CR | PP9 | ST231 |
-| 16 | SIM_AGR_016 | AGROSAVIA | Tier1_CR | PP2 | ST101 |
-| 17 | SIM_CGPS_020 | CGPS | Tier1_CR | PP10 | ST15 |
-| 18 | SIM_IBD_019 | IBADAN | Tier1_CR | PP8 | ST307 |
-| 19 | SIM_KIMS_023 | KIMS | Tier1_CR | PP1 | ST147 |
-| 20 | SIM_RITM_017 | RITM | Tier1_CR | PP4 | ST17 |
-| 21 | SIM_AGR_021 | AGROSAVIA | Tier1_CR | PP12 | ST35 |
-| 22 | SIM_CGPS_040 | CGPS | Tier1_CR | PP5 | ST45 |
-| 23 | SIM_KIMS_028 | KIMS | Tier1_CR | PP11 | ST395 |
-| 24 | SIM_IBD_014 | IBADAN | Tier1_CR | PP13 | ST23 |
-| 25 | SIM_RITM_022 | RITM | Tier1_CR | PP14 | ST86 |
+| 1 | SIM_KIMS_S1_036 | KIMS_S1 | Tier1_CR | PP12 | ST35 |
+| 2 | SIM_KIMS_S2_007 | KIMS_S2 | Tier1_CR | PP14 | ST86 |
+| 3 | SIM_KIMS_S3_003 | KIMS_S3 | Tier1_CR | PP6 | ST48 |
+| 4 | SIM_KIMS_S4_004 | KIMS_S4 | Tier1_CR | PP8 | ST307 |
+| 5 | SIM_KIMS_S5_005 | KIMS_S5 | Tier1_CR | PP10 | ST15 |
+| 6 | SIM_KIMS_S2_032 | KIMS_S2 | Tier1_CR | PP4 | ST17 |
+| 7 | SIM_KIMS_S3_008 | KIMS_S3 | Tier1_CR | PP1 | ST147 |
+| 8 | SIM_KIMS_S4_009 | KIMS_S4 | Tier1_CR | PP3 | ST11 |
+| 9 | SIM_KIMS_S1_001 | KIMS_S1 | Tier1_CR | PP2 | ST101 |
+| 10 | SIM_KIMS_S5_015 | KIMS_S5 | Tier1_CR | PP15 | ST512 |
+| 11 | SIM_KIMS_S1_011 | KIMS_S1 | Tier1_CR | PP7 | ST258 |
+| 12 | SIM_KIMS_S2_027 | KIMS_S2 | Tier1_CR | PP9 | ST231 |
+| 13 | SIM_KIMS_S3_013 | KIMS_S3 | Tier1_CR | PP11 | ST395 |
+| 14 | SIM_KIMS_S4_029 | KIMS_S4 | Tier1_CR | PP13 | ST23 |
+| 15 | SIM_KIMS_S5_025 | KIMS_S5 | Tier1_CR | PP5 | ST45 |
+| 16 | SIM_KIMS_S1_016 | KIMS_S1 | Tier1_CR | PP2 | ST101 |
+| 17 | SIM_KIMS_S2_017 | KIMS_S2 | Tier1_CR | PP4 | ST17 |
+| 18 | SIM_KIMS_S3_023 | KIMS_S3 | Tier1_CR | PP1 | ST147 |
+| 19 | SIM_KIMS_S4_019 | KIMS_S4 | Tier1_CR | PP8 | ST307 |
+| 20 | SIM_KIMS_S5_020 | KIMS_S5 | Tier1_CR | PP10 | ST15 |
+| 21 | SIM_KIMS_S1_021 | KIMS_S1 | Tier1_CR | PP12 | ST35 |
+| 22 | SIM_KIMS_S3_028 | KIMS_S3 | Tier1_CR | PP11 | ST395 |
+| 23 | SIM_KIMS_S5_040 | KIMS_S5 | Tier1_CR | PP5 | ST45 |
+| 24 | SIM_KIMS_S2_022 | KIMS_S2 | Tier1_CR | PP14 | ST86 |
+| 25 | SIM_KIMS_S4_014 | KIMS_S4 | Tier1_CR | PP13 | ST23 |
 
 ## Why the selected set is balanced
 
 With `--n-select 25`, the script:
 
 1. takes Tier1_CR isolates first;
-2. spreads those Tier1_CR choices across sentinel sites before taking site
-   duplicates;
+2. spreads those Tier1_CR choices across the partner's sentinel sites before
+   taking site duplicates;
 3. prefers different plasmid profiles within the same tier/site balance;
 4. does not move into Tier2_MDR because the Tier1_CR candidates fill the
    25-isolate capacity;

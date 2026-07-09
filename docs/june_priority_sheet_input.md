@@ -3,6 +3,11 @@
 The selector is intended to accept the June workbook format directly as CSV or
 Excel. This is the practical input style for the current sampling work.
 
+Each partner should run the selector on its own sheet. The site field in the
+selection logic should be the partner's sentinel site, not the partner name. If
+the workbook uses `laboratory` for sentinel sites, that is fine. If both
+`sentinel_site_code` and `laboratory` are present, `sentinel_site_code` is used.
+
 ## Expected shape
 
 One row per isolate, with columns like:

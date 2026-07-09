@@ -19,6 +19,11 @@ Column names are treated case-insensitively. A header template is provided at:
 | Isolate identifier | `isolate_id`, `accession_no`, `sample`, `sample_id` | Use `--id-column` if a different name is used. |
 | Sentinel site | `sentinel_site_code`, `laboratory`, `site`, `sentinel_site` | Use `--site-column` if a different name is used. |
 
+Partners should normally run the script independently on their own sheet. For a
+partner sheet, `sentinel_site_code` should identify that partner's internal
+sentinel site, such as `KIMS_S1` or `RITM_S3`. If the source file only has
+`laboratory`, the script treats that field as the sentinel-site field.
+
 ## Decision fields needed
 
 These fields are not all mathematically required, but they are needed to make a
@@ -26,7 +31,8 @@ defensible long-read selection.
 
 | Information block | Fields | Why it is needed |
 | --- | --- | --- |
-| Sentinel context | `country`, `sentinel_site_code`, `sentinel_site_name` | Country/site balance and one-per-site profile selection. |
+| Partner context | optional `partner`, `country` | Documents which partner generated the sheet. |
+| Sentinel context | `sentinel_site_code`, `sentinel_site_name` | Within-partner sentinel-site balance and one-per-site profile selection. |
 | Isolate context | `specimen_date`, `specimen_type`, `age_group`, `neonate`, `species` | Survey interpretability and special subgroups. |
 | Eligibility | `short_read_qc`, `isolate_available`, `dna_available` | Avoid selecting isolates that cannot be sequenced or assembled. |
 | AST profile | `*_mic` or `*_disk` interpretation columns for the survey AST panel | Tier assignment and resistance-profile grouping. |

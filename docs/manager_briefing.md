@@ -19,7 +19,8 @@ The repository contains:
 - a written SOP;
 - an input schema matching the June workbook style;
 - a selection script that accepts CSV or Excel;
-- a 100-isolate simulated example showing the complete process;
+- a 100-isolate simulated example showing one partner running the process
+  across its own sentinel sites;
 - a plasmid set-cover helper for checking rare plasmid coverage.
 
 ## Decision logic in plain language
@@ -32,7 +33,7 @@ fields.
 | --- | --- | --- |
 | 1 | AST tier | Carbapenem non-susceptible isolates are the primary long-read target. |
 | 2 | Primary site-profile coverage | Each sentinel site should contribute representative `RP x PP` combinations before duplicates are taken. |
-| 3 | Sentinel-site balance | The selected set should not be dominated by one site with many candidates. |
+| 3 | Within-partner sentinel-site balance | The selected set should not be dominated by one site with many candidates. |
 | 4 | Plasmid profile | Distinct plasmid profiles are prioritised to support plasmid diversity analysis. |
 | 5 | AMR/virulence flags | Convergent strains and carbapenemase/ESBL signals are retained where data are available. |
 | 6 | ST | ST is used mainly to avoid unnecessary duplication after the higher-priority criteria have been applied. |
@@ -57,9 +58,16 @@ flowchart TD
 
 ## How a site or analyst applies it
 
-1. Start with the June-style isolate sheet, either as Excel or CSV.
-2. Ensure it includes at least isolate ID, sentinel site, AST tier or AST calls,
-   resistance profile, and plasmid profile or plasmid replicons.
+Each partner runs this independently on its own isolate sheet. For example,
+KIMS runs KIMS isolates, Agrosavia runs Agrosavia isolates, and RITM runs RITM
+isolates. The balancing field inside each partner sheet is the partner's
+sentinel site code.
+
+1. Each partner starts with its own June-style isolate sheet, either as Excel or
+   CSV.
+2. Ensure it includes at least isolate ID, the partner's sentinel site code, AST
+   tier or AST calls, resistance profile, and plasmid profile or plasmid
+   replicons.
 3. Choose the sequencing capacity, for example 48, 96, or 120 isolates.
 4. Run:
 
