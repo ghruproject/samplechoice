@@ -1,0 +1,3 @@
+isolate_id,country,sentinel_site_code,sentinel_site_name,specimen_date,specimen_type,age_group,neonate,species,short_read_qc,st,cgmlst_cluster,etp_mic,ipm_mic,mem_mic,col_mic,amc_mic,tzp_mic,czo_mic,cxa_mic,fox_mic,cro_mic,caz_mic,ctx_mic,fep_mic,gen_mic,tob_mic,amk_mic,cip_mic,lev_mic,sxt_mic,tcy_mic,atm_mic,carbapenemase_genes,esbl_genes,other_amr_genes,virulence_genes,plasmid_replicons,plasmid_mob_types,plasmid_cluster_ids,isolate_available,dna_available,local_longread_capacity,notes
+AGRO_001,Colombia,AGROSAVIA_01,Example sentinel hospital,2026-01-15,blood,adult,no,Klebsiella pneumoniae,PASSED,ST307,,R,S,R,S,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,,ybt,"IncFIB(K), IncFII(K)",MOBF,cluster_001,yes,yes,yes,example row only
+
