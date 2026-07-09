@@ -33,11 +33,18 @@ Install the minimal Python dependencies in your preferred environment:
 python3 -m pip install -r requirements.txt
 ```
 
-Create the integrated dataframe using the template:
+The script accepts either:
+
+- the June-style priority workbook/CSV, with columns such as `accession_no`,
+  `laboratory`, `tier`, `rp_code`, `PP_code`, and `Plasmids`;
+- a richer integrated dataframe using the template below.
+
+Create the integrated dataframe using the template when preparing the final
+decision table:
 
 - [longread_selection_dataframe_template.csv](templates/longread_selection_dataframe_template.csv)
 
-Then run the selector on a CSV or Excel file:
+Run the selector on a CSV or Excel file:
 
 ```bash
 python3 scripts/select_longread_samples.py \
@@ -45,8 +52,16 @@ python3 scripts/select_longread_samples.py \
   --output outputs/example_priority.csv
 ```
 
-For Excel input, the first sheet is used by default. Use `--sheet-name` to pick a
-specific sheet:
+For June-style Excel input, the script automatically uses `1_Priority_Full` if
+that sheet exists:
+
+```bash
+python3 scripts/select_longread_samples.py \
+  --input isolate_priority_longread_2026-05-22.xlsx \
+  --output outputs/priority.csv
+```
+
+Use `--sheet-name` only when you want a specific sheet:
 
 ```bash
 python3 scripts/select_longread_samples.py \
@@ -59,6 +74,7 @@ python3 scripts/select_longread_samples.py \
 
 - [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
 - [Integrated input dataframe schema](docs/input_schema.md)
+- [June-style priority sheet input](docs/june_priority_sheet_input.md)
 - [Optional plasmid set-cover layer](docs/plasmid_set_cover.md)
 - [Drug-class configuration](config/antibiotic_classes.json)
 

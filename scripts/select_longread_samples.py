@@ -30,10 +30,22 @@ TRUE_MISSING = {"", "NA", "N/A", "NAN", "NONE", "NULL", "-"}
 def read_table(path: Path, sheet_name: str | None) -> pd.DataFrame:
     suffix = path.suffix.lower()
     if suffix in {".xlsx", ".xls"}:
-        return pd.read_excel(path, sheet_name=sheet_name or 0)
+        xl = pd.ExcelFile(path)
+        chosen_sheet = sheet_name or choose_excel_sheet(xl.sheet_names)
+        print(f"INFO: reading Excel sheet: {chosen_sheet}", file=sys.stderr)
+        return pd.read_excel(path, sheet_name=chosen_sheet)
     if suffix == ".tsv":
         return pd.read_csv(path, sep="\t")
     return pd.read_csv(path)
+
+
+def choose_excel_sheet(sheet_names: list[str]) -> str:
+    preferred = ["1_Priority_Full", "Priority_Full", "priority_full", "Sheet1"]
+    by_lower = {name.lower(): name for name in sheet_names}
+    for name in preferred:
+        if name.lower() in by_lower:
+            return by_lower[name.lower()]
+    return sheet_names[0]
 
 
 def find_column(columns: list[str], candidates: list[str], required: bool = False) -> str | None:
@@ -114,6 +126,12 @@ def assign_codes(values: pd.Series, prefix: str) -> dict[str, str]:
 def build_priority_table(df: pd.DataFrame, config: dict[str, Any], args: argparse.Namespace) -> pd.DataFrame:
     columns = list(df.columns)
     lower = {c.lower(): c for c in columns}
+    input_mode = detect_input_mode(columns)
+    if input_mode == "june_priority":
+        print(
+            "INFO: detected June-style priority sheet; using precomputed tier/RP/PP fields where needed",
+            file=sys.stderr,
+        )
 
     id_col = args.id_column or find_column(columns, ["isolate_id", "accession_no", "sample", "sample_id"], True)
     site_col = args.site_column or find_column(
@@ -135,6 +153,7 @@ def build_priority_table(df: pd.DataFrame, config: dict[str, Any], args: argpars
         country_col=country_col,
         st_col=st_col,
         plasmid_col=plasmid_col,
+        input_mode=input_mode,
     )
     for warning in validation_warnings:
         print(f"WARNING: {warning}", file=sys.stderr)
@@ -306,6 +325,7 @@ def validate_integrated_dataframe(
     country_col: str | None,
     st_col: str | None,
     plasmid_col: str | None,
+    input_mode: str,
 ) -> list[str]:
     lower = {c.lower() for c in columns}
     warnings = []
@@ -314,6 +334,13 @@ def validate_integrated_dataframe(
         warnings.append("no isolate identifier column found")
     if not site_col:
         warnings.append("no sentinel site/laboratory column found")
+    if input_mode == "june_priority":
+        if not plasmid_col and "pp_code" not in lower:
+            warnings.append(
+                "June-style sheet has no plasmid column or PP_code; selection will use resistance profiles only"
+            )
+        return warnings
+
     if not country_col:
         warnings.append("no country column found; country balance must be reviewed outside the script")
     if not st_col:
@@ -341,6 +368,14 @@ def validate_integrated_dataframe(
             warnings.append(f"no {label} field found; this should be added to the integrated selection dataframe")
 
     return warnings
+
+
+def detect_input_mode(columns: list[str]) -> str:
+    lower = {c.lower() for c in columns}
+    june_markers = {"priority_rank", "selection_batch", "tier", "rp_code", "resist_pattern"}
+    if len(june_markers.intersection(lower)) >= 3:
+        return "june_priority"
+    return "integrated"
 
 
 def parse_args() -> argparse.Namespace:

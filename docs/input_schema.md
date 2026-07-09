@@ -1,11 +1,14 @@
 # Integrated input dataframe schema
 
-The input should be one isolate-level dataframe: one row per short-read
-sequenced isolate. Join AST, short-read genotyping, plasmid calls, sentinel-site
-metadata, and feasibility information before running the selector.
+The script accepts CSV, TSV, XLS, and XLSX files. For the current June-style
+workbook, see [June-style priority sheet input](june_priority_sheet_input.md).
 
-The selector accepts CSV, TSV, XLS, and XLSX files. Column names are treated
-case-insensitively. A header template is provided at:
+For final decision-making, the preferred input is one isolate-level dataframe:
+one row per short-read sequenced isolate. Join AST, short-read genotyping,
+plasmid calls, sentinel-site metadata, and feasibility information before final
+manual review.
+
+Column names are treated case-insensitively. A header template is provided at:
 
 `templates/longread_selection_dataframe_template.csv`
 
@@ -55,6 +58,7 @@ If an input file already contains `tier`, `rp_code`, `PP_code`, or
 `resist_pattern`, those columns are retained for audit, but the script writes
 fresh `computed_*` columns from the configured rules.
 
-The June example workbooks contain useful precomputed priority fields. They are
-acceptable for comparison, but the operational input for a new round should be
-the integrated isolate dataframe above.
+The June example workbooks contain useful precomputed priority fields and are a
+supported script input. The richer integrated dataframe is still preferred for
+final confirmation because it keeps ST, country, AMR/virulence, and feasibility
+checks in the same row.

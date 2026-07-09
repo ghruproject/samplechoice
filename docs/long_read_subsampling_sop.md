@@ -18,10 +18,16 @@ plasmids and mobile genetic elements.
 
 ## 3. Integrated input dataframe
 
-Prepare one isolate-level dataframe before selection. Each row is one
-short-read sequenced isolate. Do not run the selection from separate AST,
-plasmid, and sentinel metadata files unless they have first been joined and
-checked.
+For scripting, the input may be either the June-style priority sheet or a richer
+integrated isolate dataframe. The June-style sheet is sufficient to reproduce
+the tier/profile/plasmid-profile prioritisation. The richer dataframe is
+preferred for final confirmation because each row carries the metadata needed
+for ST review, country/site balance, AMR/virulence interpretation, and
+sequencing feasibility.
+
+Do not confirm the final sequencing list from separate AST, plasmid, and
+sentinel metadata files unless they have first been joined or checked against
+the same isolate identifiers.
 
 Minimum columns:
 
