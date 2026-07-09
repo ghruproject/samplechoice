@@ -61,9 +61,9 @@ This writes a ranked long-read selection from
 `examples/simulated_june_priority.csv` and a plasmid set-cover demonstration to
 `outputs/`.
 
-The simulated selection asks for 10 isolates from 20 candidates. The selected
-set contains all 8 Tier1_CR isolates plus 2 Tier2_MDR isolates, balanced as 2
-isolates from each of 5 sentinel sites.
+The simulated selection asks for 25 isolates from 100 candidates. The selected
+set contains 25 Tier1_CR isolates, balanced as 5 isolates from each of 5
+sentinel sites.
 
 The script accepts either:
 
@@ -80,9 +80,9 @@ Run the selector on a CSV or Excel file:
 
 ```bash
 python3 scripts/select_longread_samples.py \
-  --input examples/example_isolates.csv \
-  --n-select 10 \
-  --output outputs/example_priority.csv
+  --input examples/simulated_june_priority.csv \
+  --n-select 25 \
+  --output outputs/simulated_priority.csv
 ```
 
 For June-style Excel input, the script automatically uses `1_Priority_Full` if

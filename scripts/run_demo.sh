@@ -5,7 +5,7 @@ mkdir -p outputs
 
 python3 scripts/select_longread_samples.py \
   --input examples/simulated_june_priority.csv \
-  --n-select 10 \
+  --n-select 25 \
   --output outputs/simulated_priority.csv
 
 python3 scripts/plasmid_set_cover.py \

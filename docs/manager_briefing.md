@@ -19,7 +19,7 @@ The repository contains:
 - a written SOP;
 - an input schema matching the June workbook style;
 - a selection script that accepts CSV or Excel;
-- a simulated example showing the complete process;
+- a 100-isolate simulated example showing the complete process;
 - a plasmid set-cover helper for checking rare plasmid coverage.
 
 ## Decision logic in plain language
