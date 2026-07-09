@@ -59,7 +59,23 @@ python3 scripts/select_longread_samples.py \
 
 - [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
 - [Integrated input dataframe schema](docs/input_schema.md)
+- [Optional plasmid set-cover layer](docs/plasmid_set_cover.md)
 - [Drug-class configuration](config/antibiotic_classes.json)
+
+## Optional plasmid set cover
+
+To identify the minimum isolate set that covers all observed PlasmidFinder
+replicons at least once:
+
+```bash
+python3 scripts/plasmid_set_cover.py \
+  --input examples/example_plasmidfinder.tab \
+  --output-prefix outputs/example_plasmid_cover
+```
+
+Use the resulting set-cover flags as review fields in the integrated dataframe;
+do not use them as a replacement for AST tiering, site balance, ST review, and
+feasibility checks.
 
 ## Assembly handoff
 

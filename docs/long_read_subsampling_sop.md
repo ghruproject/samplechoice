@@ -84,6 +84,25 @@ Create two diversity profiles when data are available.
    the same site, resistance profile, and plasmid profile unless there is a
    clear ST, outbreak, or metadata reason.
 
+### 5.3 Optional plasmid set cover
+
+Run a greedy plasmid set-cover check when an Abricate/PlasmidFinder matrix is
+available. This identifies the minimum non-redundant isolate set required to
+cover every observed plasmid replicon at least once.
+
+Use the set-cover output as a review layer:
+
+- flag set-cover isolates in the integrated dataframe;
+- check whether each set-cover isolate is already in the primary sequencing
+  set;
+- if a set-cover isolate is not selected, document whether its plasmid is
+  already covered by a higher-priority isolate, whether the isolate failed
+  feasibility checks, or whether the plasmid call is too weak to drive
+  sequencing.
+
+Set cover must not override Tier1_CR priority, country/site balance, ST
+deduplication, or feasibility review by itself.
+
 ## 6. Primary selection rule
 
 The primary sequencing set should contain one isolate per site per

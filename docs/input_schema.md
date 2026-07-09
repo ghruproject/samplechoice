@@ -30,6 +30,7 @@ defensible long-read selection.
 | AMR genotype | `carbapenemase_genes`, `esbl_genes`, `other_amr_genes` | Carbapenemase/ESBL plasmid objective and AST cross-check. |
 | Virulence genotype | `virulence_genes` or marker-specific columns | Convergent-strain objective. |
 | Plasmid signal | `plasmid_replicons`, optional `plasmid_mob_types`, optional `plasmid_cluster_ids` | Plasmid-profile diversity and possible transmission. |
+| Plasmid set cover | optional `plasmid_set_cover_selected`, `plasmid_set_cover_step`, `plasmids_new_at_step`, `n_new_plasmids` | Minimum coverage of observed plasmid replicons. |
 | Lineage | `st`, optional `cgmlst_cluster` | Deduplication and outbreak/transmission review. |
 | Feasibility | `local_longread_capacity`, `notes` | Site sequencing route and support planning. |
 
