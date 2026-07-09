@@ -1,13 +1,18 @@
 # GHRU Klebsiella long-read sample choice
 
-Lightweight SOP and helper script for selecting a subsample of short-read
-sequenced `Klebsiella pneumoniae` survey isolates for long-read sequencing.
+SOP, demonstration data, and helper scripts for selecting a subsample of
+short-read sequenced `Klebsiella pneumoniae` survey isolates for long-read
+sequencing.
 
-The procedure starts from one integrated isolate-level dataframe: one row per
-short-read sequenced isolate, with sentinel-site metadata, AST interpretation,
-short-read genotype calls, plasmid summaries, ST/cluster fields, and feasibility
-flags in the same table. The helper script ranks that table; it is not intended
-to make separate AST, plasmid, and metadata tables agree after the fact.
+This repository is intended to be readable by project leads as well as analysts.
+The core question is:
+
+> Given a short-read isolate table and a fixed long-read sequencing capacity,
+> which isolates should be selected first, and why?
+
+The answer is produced as an auditable ranked table. The script keeps all input
+isolates, flags the selected subset, and records a short reason for each
+selected isolate.
 
 The procedure is designed to support the survey plasmid objectives:
 
@@ -19,11 +24,24 @@ The strategy follows the June selection approach:
 
 1. classify isolates into resistance tiers;
 2. group isolates by resistance profile;
-3. add plasmid-profile diversity when plasmid calls are available;
-4. choose one primary isolate per site per resistance-profile/plasmid-profile
+3. balance representation across sentinel sites;
+4. add plasmid-profile diversity when plasmid calls are available;
+5. choose one primary isolate per site per resistance-profile/plasmid-profile
    combination;
-5. deduplicate or review by sequence type, metadata completeness, and lab
-   feasibility before confirming the final sequencing list.
+6. use sequence type only as a late tie-breaker;
+7. review metadata completeness and lab feasibility before confirming the final
+   sequencing list.
+
+## For Project Leads
+
+Start with:
+
+- [Manager briefing](docs/manager_briefing.md)
+- [Simulated example results](docs/simulated_results.md)
+- [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
+
+These documents explain the rationale, show the simulated selection result, and
+describe what still requires human approval.
 
 ## Quick start
 
@@ -42,6 +60,10 @@ bash scripts/run_demo.sh
 This writes a ranked long-read selection from
 `examples/simulated_june_priority.csv` and a plasmid set-cover demonstration to
 `outputs/`.
+
+The simulated selection asks for 10 isolates from 20 candidates. The selected
+set contains all 8 Tier1_CR isolates plus 2 Tier2_MDR isolates, balanced as 2
+isolates from each of 5 sentinel sites.
 
 The script accepts either:
 
@@ -86,6 +108,8 @@ python3 scripts/select_longread_samples.py \
 
 ## Main documents
 
+- [Manager briefing](docs/manager_briefing.md)
+- [Simulated example results](docs/simulated_results.md)
 - [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
 - [Selection algorithm](docs/selection_algorithm.md)
 - [Worked simulated example](docs/worked_simulated_example.md)
