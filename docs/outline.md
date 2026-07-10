@@ -1,4 +1,4 @@
-# Manager briefing: long-read isolate selection approach
+# Outline: long-read isolate selection approach
 
 ## What this repository provides
 

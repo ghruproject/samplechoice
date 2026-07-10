@@ -36,7 +36,7 @@ The strategy follows the June selection approach:
 
 Start with:
 
-- [Manager briefing](docs/manager_briefing.md)
+- [Outline](docs/outline.md)
 - [Simulated example results](docs/simulated_results.md)
 - [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
 
@@ -111,7 +111,7 @@ python3 scripts/select_longread_samples.py \
 
 ## Main documents
 
-- [Manager briefing](docs/manager_briefing.md)
+- [Outline](docs/outline.md)
 - [Simulated example results](docs/simulated_results.md)
 - [SOP: Long-read isolate subsampling](docs/long_read_subsampling_sop.md)
 - [Selection algorithm](docs/selection_algorithm.md)
