@@ -1,14 +1,14 @@
 isolate_id,laboratory,country,st,etp_mic,ipm_mic,mem_mic,col_mic,ctx_mic,caz_mic,cip_mic,gen_mic,sxt_mic,tcy_mic,amp_mic,plasmids,carbapenemase_genes,esbl_genes,virulence_genes,qc_status
-AGRO_001,AGROSAVIA,Colombia,ST307,R,S,R,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII(K)",blaKPC-2,blaCTX-M-15,ybt,PASSED
-AGRO_002,AGROSAVIA,Colombia,ST15,S,S,S,R,R,R,R,S,R,S,R,"IncFIB(K)",,blaCTX-M-15,,PASSED
-AGRO_003,AGROSAVIA,Colombia,ST23,S,S,S,S,S,S,S,S,S,S,R,"IncHI1B, IncFIB(K)",,,rmpA;iro,PASSED
-RITM_001,RITM,Philippines,ST147,I,S,S,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII",blaNDM-1,blaCTX-M-15,ybt,PASSED
-RITM_002,RITM,Philippines,ST11,S,S,S,S,R,R,R,R,R,S,R,"IncFII(K)",,blaSHV-12,,PASSED
-RITM_003,RITM,Philippines,ST35,S,S,S,S,S,S,S,S,S,S,R,,,,"PASSED"
-KIMS_001,KIMS,India,ST231,R,R,R,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII(K)",blaOXA-48,blaCTX-M-15,ybt;clb,PASSED
-KIMS_002,KIMS,India,ST231,R,R,R,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII(K)",blaOXA-48,blaCTX-M-15,ybt;clb,PASSED
-KIMS_003,KIMS,India,ST395,S,S,S,S,R,S,S,S,S,S,R,"IncR",,blaCTX-M-14,,PASSED
-IBD_001,Ibadan,Nigeria,ST101,R,S,I,S,R,R,R,R,R,S,R,"IncN, IncFII(K)",blaNDM-5,blaCTX-M-15,,PASSED
-IBD_002,Ibadan,Nigeria,ST17,S,S,S,S,R,R,S,S,S,S,R,"IncFIA",,blaCTX-M-15,,PASSED
-IBD_003,Ibadan,Nigeria,ST45,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+SITE_D_001,Partner_D,Country_D,ST307,R,S,R,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII(K)",blaKPC-2,blaCTX-M-15,ybt,PASSED
+SITE_D_002,Partner_D,Country_D,ST15,S,S,S,R,R,R,R,S,R,S,R,"IncFIB(K)",,blaCTX-M-15,,PASSED
+SITE_D_003,Partner_D,Country_D,ST23,S,S,S,S,S,S,S,S,S,S,R,"IncHI1B, IncFIB(K)",,,rmpA;iro,PASSED
+SITE_B_001,Partner_B,Country_B,ST147,I,S,S,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII",blaNDM-1,blaCTX-M-15,ybt,PASSED
+SITE_B_002,Partner_B,Country_B,ST11,S,S,S,S,R,R,R,R,R,S,R,"IncFII(K)",,blaSHV-12,,PASSED
+SITE_B_003,Partner_B,Country_B,ST35,S,S,S,S,S,S,S,S,S,S,R,,,,"PASSED"
+SITE_A_001,Partner_A,Country_A,ST231,R,R,R,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII(K)",blaOXA-48,blaCTX-M-15,ybt;clb,PASSED
+SITE_A_002,Partner_A,Country_A,ST231,R,R,R,S,R,R,R,R,R,R,R,"IncFIB(K), IncFII(K)",blaOXA-48,blaCTX-M-15,ybt;clb,PASSED
+SITE_A_003,Partner_A,Country_A,ST395,S,S,S,S,R,S,S,S,S,S,R,"IncR",,blaCTX-M-14,,PASSED
+SITE_C_001,Partner_C,Country_C,ST101,R,S,I,S,R,R,R,R,R,S,R,"IncN, IncFII(K)",blaNDM-5,blaCTX-M-15,,PASSED
+SITE_C_002,Partner_C,Country_C,ST17,S,S,S,S,R,R,S,S,S,S,R,"IncFIA",,blaCTX-M-15,,PASSED
+SITE_C_003,Partner_C,Country_C,ST45,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
 

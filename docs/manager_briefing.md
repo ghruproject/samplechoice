@@ -59,9 +59,9 @@ flowchart TD
 ## How a site or analyst applies it
 
 Each partner runs this independently on its own isolate sheet. For example,
-KIMS runs KIMS isolates, Agrosavia runs Agrosavia isolates, and RITM runs RITM
-isolates. The balancing field inside each partner sheet is the partner's
-sentinel site code.
+one partner runs only its own isolates, another partner runs only its own
+isolates, and so on. The balancing field inside each partner sheet is the
+partner's sentinel site code.
 
 1. Each partner starts with its own June-style isolate sheet, either as Excel or
    CSV.

@@ -1,8 +1,8 @@
 FILE	NUM_FOUND	IncFIB(K)	IncFII(K)	IncN	IncR	Col440II
-AGRO_001.fasta	2	1	1	.	.	.
-AGRO_002.fasta	1	1	.	.	.	.
-RITM_001.fasta	2	1	.	1	.	.
-KIMS_001.fasta	3	1	1	.	.	1
-IBD_001.fasta	2	.	1	1	.	.
-IBD_002.fasta	1	.	.	.	1	.
+SITE_D_001.fasta	2	1	1	.	.	.
+SITE_D_002.fasta	1	1	.	.	.	.
+SITE_B_001.fasta	2	1	.	1	.	.
+SITE_A_001.fasta	3	1	1	.	.	1
+SITE_C_001.fasta	2	.	1	1	.	.
+SITE_C_002.fasta	1	.	.	.	1	.
 

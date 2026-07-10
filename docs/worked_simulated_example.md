@@ -47,31 +47,31 @@ In this simulated run the selected set is:
 
 | Rank | Isolate | Site | Tier | Plasmid profile | ST |
 | --- | --- | --- | --- | --- | --- |
-| 1 | SIM_KIMS_S1_036 | KIMS_S1 | Tier1_CR | PP12 | ST35 |
-| 2 | SIM_KIMS_S2_007 | KIMS_S2 | Tier1_CR | PP14 | ST86 |
-| 3 | SIM_KIMS_S3_003 | KIMS_S3 | Tier1_CR | PP6 | ST48 |
-| 4 | SIM_KIMS_S4_004 | KIMS_S4 | Tier1_CR | PP8 | ST307 |
-| 5 | SIM_KIMS_S5_005 | KIMS_S5 | Tier1_CR | PP10 | ST15 |
-| 6 | SIM_KIMS_S2_032 | KIMS_S2 | Tier1_CR | PP4 | ST17 |
-| 7 | SIM_KIMS_S3_008 | KIMS_S3 | Tier1_CR | PP1 | ST147 |
-| 8 | SIM_KIMS_S4_009 | KIMS_S4 | Tier1_CR | PP3 | ST11 |
-| 9 | SIM_KIMS_S1_001 | KIMS_S1 | Tier1_CR | PP2 | ST101 |
-| 10 | SIM_KIMS_S5_015 | KIMS_S5 | Tier1_CR | PP15 | ST512 |
-| 11 | SIM_KIMS_S2_012 | KIMS_S2 | Tier2_MDR | PP9 | ST231 |
-| 12 | SIM_KIMS_S3_063 | KIMS_S3 | Tier2_MDR | PP11 | ST147 |
-| 13 | SIM_KIMS_S1_046 | KIMS_S1 | Tier2_MDR | PP7 | ST35 |
-| 14 | SIM_KIMS_S4_049 | KIMS_S4 | Tier2_MDR | PP13 | ST11 |
-| 15 | SIM_KIMS_S5_045 | KIMS_S5 | Tier2_MDR | PP5 | ST15 |
-| 16 | SIM_KIMS_S1_051 | KIMS_S1 | Tier2_MDR | PP2 | ST258 |
-| 17 | SIM_KIMS_S3_053 | KIMS_S3 | Tier2_MDR | PP6 | ST395 |
-| 18 | SIM_KIMS_S4_054 | KIMS_S4 | Tier2_MDR | PP8 | ST23 |
-| 19 | SIM_KIMS_S5_080 | KIMS_S5 | Tier3_nonMDR_resistant | PP15 | ST45 |
-| 20 | SIM_KIMS_S2_077 | KIMS_S2 | Tier3_nonMDR_resistant | PP9 | ST86 |
-| 21 | SIM_KIMS_S3_073 | KIMS_S3 | Tier3_nonMDR_resistant | PP1 | ST48 |
-| 22 | SIM_KIMS_S2_072 | KIMS_S2 | Tier4_pansusceptible | PP14 | ST17 |
-| 23 | SIM_KIMS_S1_086 | KIMS_S1 | Tier4_pansusceptible | PP12 | ST101 |
-| 24 | SIM_KIMS_S4_089 | KIMS_S4 | Tier4_pansusceptible | PP3 | ST307 |
-| 25 | SIM_KIMS_S5_100 | KIMS_S5 | Tier4_pansusceptible | PP10 | ST512 |
+| 1 | SIM_PARTNER_A_S1_036 | SITE_A_1 | Tier1_CR | PP12 | ST35 |
+| 2 | SIM_PARTNER_A_S2_007 | SITE_A_2 | Tier1_CR | PP14 | ST86 |
+| 3 | SIM_PARTNER_A_S3_003 | SITE_A_3 | Tier1_CR | PP6 | ST48 |
+| 4 | SIM_PARTNER_A_S4_004 | SITE_A_4 | Tier1_CR | PP8 | ST307 |
+| 5 | SIM_PARTNER_A_S5_005 | SITE_A_5 | Tier1_CR | PP10 | ST15 |
+| 6 | SIM_PARTNER_A_S2_032 | SITE_A_2 | Tier1_CR | PP4 | ST17 |
+| 7 | SIM_PARTNER_A_S3_008 | SITE_A_3 | Tier1_CR | PP1 | ST147 |
+| 8 | SIM_PARTNER_A_S4_009 | SITE_A_4 | Tier1_CR | PP3 | ST11 |
+| 9 | SIM_PARTNER_A_S1_001 | SITE_A_1 | Tier1_CR | PP2 | ST101 |
+| 10 | SIM_PARTNER_A_S5_015 | SITE_A_5 | Tier1_CR | PP15 | ST512 |
+| 11 | SIM_PARTNER_A_S2_012 | SITE_A_2 | Tier2_MDR | PP9 | ST231 |
+| 12 | SIM_PARTNER_A_S3_063 | SITE_A_3 | Tier2_MDR | PP11 | ST147 |
+| 13 | SIM_PARTNER_A_S1_046 | SITE_A_1 | Tier2_MDR | PP7 | ST35 |
+| 14 | SIM_PARTNER_A_S4_049 | SITE_A_4 | Tier2_MDR | PP13 | ST11 |
+| 15 | SIM_PARTNER_A_S5_045 | SITE_A_5 | Tier2_MDR | PP5 | ST15 |
+| 16 | SIM_PARTNER_A_S1_051 | SITE_A_1 | Tier2_MDR | PP2 | ST258 |
+| 17 | SIM_PARTNER_A_S3_053 | SITE_A_3 | Tier2_MDR | PP6 | ST395 |
+| 18 | SIM_PARTNER_A_S4_054 | SITE_A_4 | Tier2_MDR | PP8 | ST23 |
+| 19 | SIM_PARTNER_A_S5_080 | SITE_A_5 | Tier3_nonMDR_resistant | PP15 | ST45 |
+| 20 | SIM_PARTNER_A_S2_077 | SITE_A_2 | Tier3_nonMDR_resistant | PP9 | ST86 |
+| 21 | SIM_PARTNER_A_S3_073 | SITE_A_3 | Tier3_nonMDR_resistant | PP1 | ST48 |
+| 22 | SIM_PARTNER_A_S2_072 | SITE_A_2 | Tier4_pansusceptible | PP14 | ST17 |
+| 23 | SIM_PARTNER_A_S1_086 | SITE_A_1 | Tier4_pansusceptible | PP12 | ST101 |
+| 24 | SIM_PARTNER_A_S4_089 | SITE_A_4 | Tier4_pansusceptible | PP3 | ST307 |
+| 25 | SIM_PARTNER_A_S5_100 | SITE_A_5 | Tier4_pansusceptible | PP10 | ST512 |
 
 ## Why the selected set is balanced
 

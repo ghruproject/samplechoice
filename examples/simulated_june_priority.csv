@@ -1,101 +1,101 @@
 priority_rank,selection_batch,accession_no,partner,country,sentinel_site_code,sentinel_site_name,laboratory,st,tier,rp_code,PP_code,Plasmids,etp_mic,ipm_mic,mem_mic,col_mic,ctx_mic,caz_mic,cip_mic,gen_mic,sxt_mic,tcy_mic,amp_mic,carbapenemase_genes,esbl_genes,virulence_genes,qc_status
-1,Primary,SIM_KIMS_S1_001,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier1_CR,RP1,PP2,"IncFIB(K), IncN",R,R,R,R,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-2,Primary,SIM_KIMS_S2_002,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier1_CR,RP2,PP4,"IncR, Col440II",I,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-3,Primary,SIM_KIMS_S3_003,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier1_CR,RP3,PP6,IncFIA,S,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-4,Primary,SIM_KIMS_S4_004,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier1_CR,RP4,PP8,IncR,R,S,S,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-5,Primary,SIM_KIMS_S5_005,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier1_CR,RP5,PP10,"IncFIB(K), IncR",I,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-6,Primary,SIM_KIMS_S1_006,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier1_CR,RP6,PP12,IncX3,S,R,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-7,Primary,SIM_KIMS_S2_007,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier1_CR,RP7,PP14,NO_PLASMID_CALL,R,S,R,S,R,R,R,R,R,S,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-8,Primary,SIM_KIMS_S3_008,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier1_CR,RP8,PP1,"IncFIB(K), IncFII(K)",I,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-9,Primary,SIM_KIMS_S4_009,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier1_CR,RP9,PP3,"IncFII(K), IncN",S,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-10,Primary,SIM_KIMS_S5_010,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier1_CR,RP10,PP5,"IncHI1B, IncFIB(K)",R,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,,PASSED
-11,Primary,SIM_KIMS_S1_011,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST258,Tier1_CR,RP1,PP7,IncFII(K),I,R,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-12,Primary,SIM_KIMS_S2_012,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST231,Tier1_CR,RP2,PP9,"IncFIA, IncN",S,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-13,Primary,SIM_KIMS_S3_013,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST395,Tier1_CR,RP3,PP11,IncQ1,R,S,R,S,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-14,Primary,SIM_KIMS_S4_014,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST23,Tier1_CR,RP4,PP13,IncHI1B,I,S,S,R,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-15,Primary,SIM_KIMS_S5_015,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST512,Tier1_CR,RP5,PP15,Col440II,S,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-16,Primary,SIM_KIMS_S1_016,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier1_CR,RP6,PP2,"IncFIB(K), IncN",R,R,S,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-17,Primary,SIM_KIMS_S2_017,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier1_CR,RP7,PP4,"IncR, Col440II",I,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-18,Primary,SIM_KIMS_S3_018,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier1_CR,RP8,PP6,IncFIA,S,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-19,Primary,SIM_KIMS_S4_019,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier1_CR,RP9,PP8,IncR,R,S,R,S,R,R,R,R,R,S,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-20,Primary,SIM_KIMS_S5_020,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier1_CR,RP10,PP10,"IncFIB(K), IncR",I,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-21,Primary,SIM_KIMS_S1_021,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier1_CR,RP1,PP12,IncX3,S,R,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-22,Primary,SIM_KIMS_S2_022,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier1_CR,RP2,PP14,NO_PLASMID_CALL,R,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,,PASSED
-23,Primary,SIM_KIMS_S3_023,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier1_CR,RP3,PP1,"IncFIB(K), IncFII(K)",I,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-24,Primary,SIM_KIMS_S4_024,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier1_CR,RP4,PP3,"IncFII(K), IncN",S,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-25,Primary,SIM_KIMS_S5_025,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier1_CR,RP5,PP5,"IncHI1B, IncFIB(K)",R,S,R,S,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-26,Primary,SIM_KIMS_S1_026,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST258,Tier1_CR,RP6,PP7,IncFII(K),I,R,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-27,Primary,SIM_KIMS_S2_027,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST231,Tier1_CR,RP7,PP9,"IncFIA, IncN",S,S,R,R,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-28,Primary,SIM_KIMS_S3_028,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST395,Tier1_CR,RP8,PP11,IncQ1,R,S,S,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-29,Primary,SIM_KIMS_S4_029,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST23,Tier1_CR,RP9,PP13,IncHI1B,I,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-30,Primary,SIM_KIMS_S5_030,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST512,Tier1_CR,RP10,PP15,Col440II,S,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-31,Secondary,SIM_KIMS_S1_031,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier1_CR,RP1,PP2,"IncFIB(K), IncN",R,R,R,S,R,R,R,R,R,S,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-32,Secondary,SIM_KIMS_S2_032,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier1_CR,RP2,PP4,"IncR, Col440II",I,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-33,Secondary,SIM_KIMS_S3_033,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier1_CR,RP3,PP6,IncFIA,S,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-34,Secondary,SIM_KIMS_S4_034,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier1_CR,RP4,PP8,IncR,R,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,,PASSED
-35,Secondary,SIM_KIMS_S5_035,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier1_CR,RP5,PP10,"IncFIB(K), IncR",I,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-36,Secondary,SIM_KIMS_S1_036,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier1_CR,RP6,PP12,IncX3,S,R,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-37,Secondary,SIM_KIMS_S2_037,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier1_CR,RP7,PP14,NO_PLASMID_CALL,R,S,R,S,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
-38,Secondary,SIM_KIMS_S3_038,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier1_CR,RP8,PP1,"IncFIB(K), IncFII(K)",I,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
-39,Secondary,SIM_KIMS_S4_039,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier1_CR,RP9,PP3,"IncFII(K), IncN",S,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
-40,Secondary,SIM_KIMS_S5_040,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier1_CR,RP10,PP5,"IncHI1B, IncFIB(K)",R,S,S,R,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
-41,Primary,SIM_KIMS_S1_041,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier2_MDR,RP21,PP12,IncX3,S,S,S,R,R,R,R,S,R,R,R,,blaCTX-M-15,ybt,PASSED
-42,Primary,SIM_KIMS_S2_042,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier2_MDR,RP22,PP14,NO_PLASMID_CALL,S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
-43,Primary,SIM_KIMS_S3_043,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier2_MDR,RP23,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,R,S,R,S,R,S,R,,blaCTX-M-14,,PASSED
-44,Primary,SIM_KIMS_S4_044,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier2_MDR,RP24,PP3,"IncFII(K), IncN",S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
-45,Primary,SIM_KIMS_S5_045,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier2_MDR,RP25,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,R,S,R,S,R,R,R,,blaSHV-12,,PASSED
-46,Primary,SIM_KIMS_S1_046,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier2_MDR,RP26,PP7,IncFII(K),S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
-47,Primary,SIM_KIMS_S2_047,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier2_MDR,RP27,PP9,"IncFIA, IncN",S,S,S,S,R,R,R,S,R,S,R,,blaCTX-M-15,,PASSED
-48,Primary,SIM_KIMS_S3_048,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier2_MDR,RP28,PP11,IncQ1,S,S,S,R,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
-49,Primary,SIM_KIMS_S4_049,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier2_MDR,RP29,PP13,IncHI1B,S,S,S,S,R,S,R,S,R,R,R,,blaCTX-M-14,,PASSED
-50,Primary,SIM_KIMS_S5_050,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier2_MDR,RP30,PP15,Col440II,S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
-51,Primary,SIM_KIMS_S1_051,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST258,Tier2_MDR,RP21,PP2,"IncFIB(K), IncN",S,S,S,S,R,S,R,S,R,S,R,,blaSHV-12,,PASSED
-52,Primary,SIM_KIMS_S2_052,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST231,Tier2_MDR,RP22,PP4,"IncR, Col440II",S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,ybt,PASSED
-53,Primary,SIM_KIMS_S3_053,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST395,Tier2_MDR,RP23,PP6,IncFIA,S,S,S,S,R,R,R,S,R,R,R,,blaCTX-M-15,,PASSED
-54,Primary,SIM_KIMS_S4_054,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST23,Tier2_MDR,RP24,PP8,IncR,S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
-55,Primary,SIM_KIMS_S5_055,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST512,Tier2_MDR,RP25,PP10,"IncFIB(K), IncR",S,S,S,R,R,S,R,S,R,S,R,,blaCTX-M-14,,PASSED
-56,Primary,SIM_KIMS_S1_056,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier2_MDR,RP26,PP12,IncX3,S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
-57,Primary,SIM_KIMS_S2_057,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier2_MDR,RP27,PP14,NO_PLASMID_CALL,S,S,S,S,R,S,R,S,R,R,R,,blaSHV-12,,PASSED
-58,Primary,SIM_KIMS_S3_058,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier2_MDR,RP28,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
-59,Primary,SIM_KIMS_S4_059,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier2_MDR,RP29,PP3,"IncFII(K), IncN",S,S,S,S,R,R,R,S,R,S,R,,blaCTX-M-15,,PASSED
-60,Primary,SIM_KIMS_S5_060,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier2_MDR,RP30,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
-61,Primary,SIM_KIMS_S1_061,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier2_MDR,RP21,PP7,IncFII(K),S,S,S,S,R,S,R,S,R,R,R,,blaCTX-M-14,,PASSED
-62,Primary,SIM_KIMS_S2_062,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier2_MDR,RP22,PP9,"IncFIA, IncN",S,S,S,R,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
-63,Primary,SIM_KIMS_S3_063,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier2_MDR,RP23,PP11,IncQ1,S,S,S,S,R,S,R,S,R,S,R,,blaSHV-12,ybt,PASSED
-64,Primary,SIM_KIMS_S4_064,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier2_MDR,RP24,PP13,IncHI1B,S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
-65,Secondary,SIM_KIMS_S5_065,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier2_MDR,RP25,PP15,Col440II,S,S,S,S,R,R,R,S,R,R,R,,blaCTX-M-15,,PASSED
-66,Secondary,SIM_KIMS_S1_066,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST258,Tier2_MDR,RP26,PP2,"IncFIB(K), IncN",S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
-67,Secondary,SIM_KIMS_S2_067,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST231,Tier2_MDR,RP27,PP4,"IncR, Col440II",S,S,S,S,R,S,R,S,R,S,R,,blaCTX-M-14,,PASSED
-68,Secondary,SIM_KIMS_S3_068,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST395,Tier2_MDR,RP28,PP6,IncFIA,S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
-69,Secondary,SIM_KIMS_S4_069,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST23,Tier2_MDR,RP29,PP8,IncR,S,S,S,R,R,S,R,S,R,R,R,,blaSHV-12,,PASSED
-70,Secondary,SIM_KIMS_S5_070,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST512,Tier2_MDR,RP30,PP10,"IncFIB(K), IncR",S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
-71,Primary,SIM_KIMS_S1_071,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier3_nonMDR_resistant,RP41,PP12,IncX3,S,S,S,S,R,S,R,S,R,S,R,,,rmpA;iro,PASSED
-72,Primary,SIM_KIMS_S2_072,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier3_nonMDR_resistant,RP42,PP14,NO_PLASMID_CALL,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-73,Primary,SIM_KIMS_S3_073,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier3_nonMDR_resistant,RP43,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
-74,Primary,SIM_KIMS_S4_074,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier3_nonMDR_resistant,RP44,PP3,"IncFII(K), IncN",S,S,S,S,S,S,S,S,R,S,R,,,,PASSED
-75,Primary,SIM_KIMS_S5_075,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier3_nonMDR_resistant,RP45,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
-76,Primary,SIM_KIMS_S1_076,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier3_nonMDR_resistant,RP46,PP7,IncFII(K),S,S,S,S,S,S,R,S,S,S,R,,,,PASSED
-77,Primary,SIM_KIMS_S2_077,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier3_nonMDR_resistant,RP47,PP9,"IncFIA, IncN",S,S,S,S,R,S,S,S,R,S,R,,,,PASSED
-78,Primary,SIM_KIMS_S3_078,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier3_nonMDR_resistant,RP48,PP11,IncQ1,S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
-79,Primary,SIM_KIMS_S4_079,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier3_nonMDR_resistant,RP49,PP13,IncHI1B,S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
-80,Primary,SIM_KIMS_S5_080,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier3_nonMDR_resistant,RP50,PP15,Col440II,S,S,S,S,S,S,S,S,R,S,R,,,,PASSED
-81,Primary,SIM_KIMS_S1_081,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST258,Tier3_nonMDR_resistant,RP41,PP2,"IncFIB(K), IncN",S,S,S,S,R,S,R,S,S,S,R,,,,PASSED
-82,Primary,SIM_KIMS_S2_082,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST231,Tier3_nonMDR_resistant,RP42,PP4,"IncR, Col440II",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-83,Primary,SIM_KIMS_S3_083,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST395,Tier3_nonMDR_resistant,RP43,PP6,IncFIA,S,S,S,S,R,S,S,S,R,S,R,,,,PASSED
-84,Primary,SIM_KIMS_S4_084,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST23,Tier3_nonMDR_resistant,RP44,PP8,IncR,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-85,Primary,SIM_KIMS_S5_085,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST512,Tier3_nonMDR_resistant,RP45,PP10,"IncFIB(K), IncR",S,S,S,S,R,S,S,S,S,S,R,,,rmpA;iro,PASSED
-86,Primary,SIM_KIMS_S1_086,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST101,Tier4_pansusceptible,RP51,PP12,IncX3,S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
-87,Primary,SIM_KIMS_S2_087,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST17,Tier4_pansusceptible,RP52,PP14,NO_PLASMID_CALL,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-88,Primary,SIM_KIMS_S3_088,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST48,Tier4_pansusceptible,RP53,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-89,Primary,SIM_KIMS_S4_089,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST307,Tier4_pansusceptible,RP54,PP3,"IncFII(K), IncN",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-90,Primary,SIM_KIMS_S5_090,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST15,Tier4_pansusceptible,RP55,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-91,Primary,SIM_KIMS_S1_091,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST35,Tier4_pansusceptible,RP56,PP7,IncFII(K),S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-92,Primary,SIM_KIMS_S2_092,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST86,Tier4_pansusceptible,RP57,PP9,"IncFIA, IncN",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-93,Primary,SIM_KIMS_S3_093,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST147,Tier4_pansusceptible,RP58,PP11,IncQ1,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-94,Primary,SIM_KIMS_S4_094,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST11,Tier4_pansusceptible,RP59,PP13,IncHI1B,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-95,Primary,SIM_KIMS_S5_095,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST45,Tier4_pansusceptible,RP60,PP15,Col440II,S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
-96,Primary,SIM_KIMS_S1_096,KIMS,India,KIMS_S1,KIMS sentinel site 1,KIMS_S1,ST258,Tier4_pansusceptible,RP51,PP2,"IncFIB(K), IncN",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-97,Primary,SIM_KIMS_S2_097,KIMS,India,KIMS_S2,KIMS sentinel site 2,KIMS_S2,ST231,Tier4_pansusceptible,RP52,PP4,"IncR, Col440II",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-98,Primary,SIM_KIMS_S3_098,KIMS,India,KIMS_S3,KIMS sentinel site 3,KIMS_S3,ST395,Tier4_pansusceptible,RP53,PP6,IncFIA,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-99,Primary,SIM_KIMS_S4_099,KIMS,India,KIMS_S4,KIMS sentinel site 4,KIMS_S4,ST23,Tier4_pansusceptible,RP54,PP8,IncR,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
-100,Primary,SIM_KIMS_S5_100,KIMS,India,KIMS_S5,KIMS sentinel site 5,KIMS_S5,ST512,Tier4_pansusceptible,RP55,PP10,"IncFIB(K), IncR",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+1,Primary,SIM_PARTNER_A_S1_001,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier1_CR,RP1,PP2,"IncFIB(K), IncN",R,R,R,R,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+2,Primary,SIM_PARTNER_A_S2_002,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier1_CR,RP2,PP4,"IncR, Col440II",I,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+3,Primary,SIM_PARTNER_A_S3_003,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier1_CR,RP3,PP6,IncFIA,S,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+4,Primary,SIM_PARTNER_A_S4_004,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier1_CR,RP4,PP8,IncR,R,S,S,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+5,Primary,SIM_PARTNER_A_S5_005,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier1_CR,RP5,PP10,"IncFIB(K), IncR",I,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+6,Primary,SIM_PARTNER_A_S1_006,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier1_CR,RP6,PP12,IncX3,S,R,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+7,Primary,SIM_PARTNER_A_S2_007,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier1_CR,RP7,PP14,NO_PLASMID_CALL,R,S,R,S,R,R,R,R,R,S,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+8,Primary,SIM_PARTNER_A_S3_008,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier1_CR,RP8,PP1,"IncFIB(K), IncFII(K)",I,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+9,Primary,SIM_PARTNER_A_S4_009,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier1_CR,RP9,PP3,"IncFII(K), IncN",S,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+10,Primary,SIM_PARTNER_A_S5_010,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier1_CR,RP10,PP5,"IncHI1B, IncFIB(K)",R,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,,PASSED
+11,Primary,SIM_PARTNER_A_S1_011,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST258,Tier1_CR,RP1,PP7,IncFII(K),I,R,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+12,Primary,SIM_PARTNER_A_S2_012,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST231,Tier1_CR,RP2,PP9,"IncFIA, IncN",S,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+13,Primary,SIM_PARTNER_A_S3_013,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST395,Tier1_CR,RP3,PP11,IncQ1,R,S,R,S,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+14,Primary,SIM_PARTNER_A_S4_014,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST23,Tier1_CR,RP4,PP13,IncHI1B,I,S,S,R,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+15,Primary,SIM_PARTNER_A_S5_015,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST512,Tier1_CR,RP5,PP15,Col440II,S,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+16,Primary,SIM_PARTNER_A_S1_016,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier1_CR,RP6,PP2,"IncFIB(K), IncN",R,R,S,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+17,Primary,SIM_PARTNER_A_S2_017,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier1_CR,RP7,PP4,"IncR, Col440II",I,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+18,Primary,SIM_PARTNER_A_S3_018,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier1_CR,RP8,PP6,IncFIA,S,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+19,Primary,SIM_PARTNER_A_S4_019,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier1_CR,RP9,PP8,IncR,R,S,R,S,R,R,R,R,R,S,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+20,Primary,SIM_PARTNER_A_S5_020,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier1_CR,RP10,PP10,"IncFIB(K), IncR",I,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+21,Primary,SIM_PARTNER_A_S1_021,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier1_CR,RP1,PP12,IncX3,S,R,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+22,Primary,SIM_PARTNER_A_S2_022,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier1_CR,RP2,PP14,NO_PLASMID_CALL,R,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,,PASSED
+23,Primary,SIM_PARTNER_A_S3_023,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier1_CR,RP3,PP1,"IncFIB(K), IncFII(K)",I,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+24,Primary,SIM_PARTNER_A_S4_024,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier1_CR,RP4,PP3,"IncFII(K), IncN",S,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+25,Primary,SIM_PARTNER_A_S5_025,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier1_CR,RP5,PP5,"IncHI1B, IncFIB(K)",R,S,R,S,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+26,Primary,SIM_PARTNER_A_S1_026,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST258,Tier1_CR,RP6,PP7,IncFII(K),I,R,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+27,Primary,SIM_PARTNER_A_S2_027,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST231,Tier1_CR,RP7,PP9,"IncFIA, IncN",S,S,R,R,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+28,Primary,SIM_PARTNER_A_S3_028,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST395,Tier1_CR,RP8,PP11,IncQ1,R,S,S,S,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+29,Primary,SIM_PARTNER_A_S4_029,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST23,Tier1_CR,RP9,PP13,IncHI1B,I,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+30,Primary,SIM_PARTNER_A_S5_030,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST512,Tier1_CR,RP10,PP15,Col440II,S,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+31,Secondary,SIM_PARTNER_A_S1_031,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier1_CR,RP1,PP2,"IncFIB(K), IncN",R,R,R,S,R,R,R,R,R,S,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+32,Secondary,SIM_PARTNER_A_S2_032,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier1_CR,RP2,PP4,"IncR, Col440II",I,S,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+33,Secondary,SIM_PARTNER_A_S3_033,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier1_CR,RP3,PP6,IncFIA,S,S,R,S,R,R,R,R,R,R,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+34,Secondary,SIM_PARTNER_A_S4_034,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier1_CR,RP4,PP8,IncR,R,S,S,S,R,R,R,R,R,S,R,blaNDM-1,blaCTX-M-15,,PASSED
+35,Secondary,SIM_PARTNER_A_S5_035,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier1_CR,RP5,PP10,"IncFIB(K), IncR",I,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+36,Secondary,SIM_PARTNER_A_S1_036,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier1_CR,RP6,PP12,IncX3,S,R,S,S,R,R,R,R,R,R,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+37,Secondary,SIM_PARTNER_A_S2_037,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier1_CR,RP7,PP14,NO_PLASMID_CALL,R,S,R,S,R,R,R,R,R,S,R,blaKPC-2,blaCTX-M-15,ybt,PASSED
+38,Secondary,SIM_PARTNER_A_S3_038,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier1_CR,RP8,PP1,"IncFIB(K), IncFII(K)",I,S,S,S,R,R,R,R,R,R,R,blaNDM-1,blaCTX-M-15,,PASSED
+39,Secondary,SIM_PARTNER_A_S4_039,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier1_CR,RP9,PP3,"IncFII(K), IncN",S,S,R,S,R,R,R,R,R,R,R,blaOXA-48,blaCTX-M-15,rmpA;iro,PASSED
+40,Secondary,SIM_PARTNER_A_S5_040,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier1_CR,RP10,PP5,"IncHI1B, IncFIB(K)",R,S,S,R,R,R,R,R,R,S,R,blaNDM-5,blaCTX-M-15,ybt;clb,PASSED
+41,Primary,SIM_PARTNER_A_S1_041,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier2_MDR,RP21,PP12,IncX3,S,S,S,R,R,R,R,S,R,R,R,,blaCTX-M-15,ybt,PASSED
+42,Primary,SIM_PARTNER_A_S2_042,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier2_MDR,RP22,PP14,NO_PLASMID_CALL,S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
+43,Primary,SIM_PARTNER_A_S3_043,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier2_MDR,RP23,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,R,S,R,S,R,S,R,,blaCTX-M-14,,PASSED
+44,Primary,SIM_PARTNER_A_S4_044,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier2_MDR,RP24,PP3,"IncFII(K), IncN",S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
+45,Primary,SIM_PARTNER_A_S5_045,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier2_MDR,RP25,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,R,S,R,S,R,R,R,,blaSHV-12,,PASSED
+46,Primary,SIM_PARTNER_A_S1_046,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier2_MDR,RP26,PP7,IncFII(K),S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
+47,Primary,SIM_PARTNER_A_S2_047,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier2_MDR,RP27,PP9,"IncFIA, IncN",S,S,S,S,R,R,R,S,R,S,R,,blaCTX-M-15,,PASSED
+48,Primary,SIM_PARTNER_A_S3_048,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier2_MDR,RP28,PP11,IncQ1,S,S,S,R,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
+49,Primary,SIM_PARTNER_A_S4_049,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier2_MDR,RP29,PP13,IncHI1B,S,S,S,S,R,S,R,S,R,R,R,,blaCTX-M-14,,PASSED
+50,Primary,SIM_PARTNER_A_S5_050,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier2_MDR,RP30,PP15,Col440II,S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
+51,Primary,SIM_PARTNER_A_S1_051,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST258,Tier2_MDR,RP21,PP2,"IncFIB(K), IncN",S,S,S,S,R,S,R,S,R,S,R,,blaSHV-12,,PASSED
+52,Primary,SIM_PARTNER_A_S2_052,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST231,Tier2_MDR,RP22,PP4,"IncR, Col440II",S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,ybt,PASSED
+53,Primary,SIM_PARTNER_A_S3_053,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST395,Tier2_MDR,RP23,PP6,IncFIA,S,S,S,S,R,R,R,S,R,R,R,,blaCTX-M-15,,PASSED
+54,Primary,SIM_PARTNER_A_S4_054,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST23,Tier2_MDR,RP24,PP8,IncR,S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
+55,Primary,SIM_PARTNER_A_S5_055,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST512,Tier2_MDR,RP25,PP10,"IncFIB(K), IncR",S,S,S,R,R,S,R,S,R,S,R,,blaCTX-M-14,,PASSED
+56,Primary,SIM_PARTNER_A_S1_056,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier2_MDR,RP26,PP12,IncX3,S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
+57,Primary,SIM_PARTNER_A_S2_057,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier2_MDR,RP27,PP14,NO_PLASMID_CALL,S,S,S,S,R,S,R,S,R,R,R,,blaSHV-12,,PASSED
+58,Primary,SIM_PARTNER_A_S3_058,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier2_MDR,RP28,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
+59,Primary,SIM_PARTNER_A_S4_059,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier2_MDR,RP29,PP3,"IncFII(K), IncN",S,S,S,S,R,R,R,S,R,S,R,,blaCTX-M-15,,PASSED
+60,Primary,SIM_PARTNER_A_S5_060,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier2_MDR,RP30,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
+61,Primary,SIM_PARTNER_A_S1_061,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier2_MDR,RP21,PP7,IncFII(K),S,S,S,S,R,S,R,S,R,R,R,,blaCTX-M-14,,PASSED
+62,Primary,SIM_PARTNER_A_S2_062,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier2_MDR,RP22,PP9,"IncFIA, IncN",S,S,S,R,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
+63,Primary,SIM_PARTNER_A_S3_063,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier2_MDR,RP23,PP11,IncQ1,S,S,S,S,R,S,R,S,R,S,R,,blaSHV-12,ybt,PASSED
+64,Primary,SIM_PARTNER_A_S4_064,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier2_MDR,RP24,PP13,IncHI1B,S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
+65,Secondary,SIM_PARTNER_A_S5_065,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier2_MDR,RP25,PP15,Col440II,S,S,S,S,R,R,R,S,R,R,R,,blaCTX-M-15,,PASSED
+66,Secondary,SIM_PARTNER_A_S1_066,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST258,Tier2_MDR,RP26,PP2,"IncFIB(K), IncN",S,S,S,S,S,S,R,R,R,S,R,,blaSHV-12,,PASSED
+67,Secondary,SIM_PARTNER_A_S2_067,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST231,Tier2_MDR,RP27,PP4,"IncR, Col440II",S,S,S,S,R,S,R,S,R,S,R,,blaCTX-M-14,,PASSED
+68,Secondary,SIM_PARTNER_A_S3_068,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST395,Tier2_MDR,RP28,PP6,IncFIA,S,S,S,S,S,R,R,R,R,S,R,,blaCTX-M-15,,PASSED
+69,Secondary,SIM_PARTNER_A_S4_069,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST23,Tier2_MDR,RP29,PP8,IncR,S,S,S,R,R,S,R,S,R,R,R,,blaSHV-12,,PASSED
+70,Secondary,SIM_PARTNER_A_S5_070,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST512,Tier2_MDR,RP30,PP10,"IncFIB(K), IncR",S,S,S,S,S,S,R,R,R,S,R,,blaCTX-M-14,,PASSED
+71,Primary,SIM_PARTNER_A_S1_071,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier3_nonMDR_resistant,RP41,PP12,IncX3,S,S,S,S,R,S,R,S,R,S,R,,,rmpA;iro,PASSED
+72,Primary,SIM_PARTNER_A_S2_072,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier3_nonMDR_resistant,RP42,PP14,NO_PLASMID_CALL,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+73,Primary,SIM_PARTNER_A_S3_073,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier3_nonMDR_resistant,RP43,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
+74,Primary,SIM_PARTNER_A_S4_074,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier3_nonMDR_resistant,RP44,PP3,"IncFII(K), IncN",S,S,S,S,S,S,S,S,R,S,R,,,,PASSED
+75,Primary,SIM_PARTNER_A_S5_075,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier3_nonMDR_resistant,RP45,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
+76,Primary,SIM_PARTNER_A_S1_076,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier3_nonMDR_resistant,RP46,PP7,IncFII(K),S,S,S,S,S,S,R,S,S,S,R,,,,PASSED
+77,Primary,SIM_PARTNER_A_S2_077,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier3_nonMDR_resistant,RP47,PP9,"IncFIA, IncN",S,S,S,S,R,S,S,S,R,S,R,,,,PASSED
+78,Primary,SIM_PARTNER_A_S3_078,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier3_nonMDR_resistant,RP48,PP11,IncQ1,S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
+79,Primary,SIM_PARTNER_A_S4_079,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier3_nonMDR_resistant,RP49,PP13,IncHI1B,S,S,S,S,R,S,S,S,S,S,R,,,,PASSED
+80,Primary,SIM_PARTNER_A_S5_080,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier3_nonMDR_resistant,RP50,PP15,Col440II,S,S,S,S,S,S,S,S,R,S,R,,,,PASSED
+81,Primary,SIM_PARTNER_A_S1_081,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST258,Tier3_nonMDR_resistant,RP41,PP2,"IncFIB(K), IncN",S,S,S,S,R,S,R,S,S,S,R,,,,PASSED
+82,Primary,SIM_PARTNER_A_S2_082,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST231,Tier3_nonMDR_resistant,RP42,PP4,"IncR, Col440II",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+83,Primary,SIM_PARTNER_A_S3_083,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST395,Tier3_nonMDR_resistant,RP43,PP6,IncFIA,S,S,S,S,R,S,S,S,R,S,R,,,,PASSED
+84,Primary,SIM_PARTNER_A_S4_084,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST23,Tier3_nonMDR_resistant,RP44,PP8,IncR,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+85,Primary,SIM_PARTNER_A_S5_085,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST512,Tier3_nonMDR_resistant,RP45,PP10,"IncFIB(K), IncR",S,S,S,S,R,S,S,S,S,S,R,,,rmpA;iro,PASSED
+86,Primary,SIM_PARTNER_A_S1_086,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST101,Tier4_pansusceptible,RP51,PP12,IncX3,S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
+87,Primary,SIM_PARTNER_A_S2_087,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST17,Tier4_pansusceptible,RP52,PP14,NO_PLASMID_CALL,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+88,Primary,SIM_PARTNER_A_S3_088,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST48,Tier4_pansusceptible,RP53,PP1,"IncFIB(K), IncFII(K)",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+89,Primary,SIM_PARTNER_A_S4_089,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST307,Tier4_pansusceptible,RP54,PP3,"IncFII(K), IncN",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+90,Primary,SIM_PARTNER_A_S5_090,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST15,Tier4_pansusceptible,RP55,PP5,"IncHI1B, IncFIB(K)",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+91,Primary,SIM_PARTNER_A_S1_091,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST35,Tier4_pansusceptible,RP56,PP7,IncFII(K),S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+92,Primary,SIM_PARTNER_A_S2_092,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST86,Tier4_pansusceptible,RP57,PP9,"IncFIA, IncN",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+93,Primary,SIM_PARTNER_A_S3_093,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST147,Tier4_pansusceptible,RP58,PP11,IncQ1,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+94,Primary,SIM_PARTNER_A_S4_094,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST11,Tier4_pansusceptible,RP59,PP13,IncHI1B,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+95,Primary,SIM_PARTNER_A_S5_095,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST45,Tier4_pansusceptible,RP60,PP15,Col440II,S,S,S,S,S,S,S,S,S,S,R,,,rmpA;iro,PASSED
+96,Primary,SIM_PARTNER_A_S1_096,Partner_A,Country_A,SITE_A_1,Sentinel site 1,SITE_A_1,ST258,Tier4_pansusceptible,RP51,PP2,"IncFIB(K), IncN",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+97,Primary,SIM_PARTNER_A_S2_097,Partner_A,Country_A,SITE_A_2,Sentinel site 2,SITE_A_2,ST231,Tier4_pansusceptible,RP52,PP4,"IncR, Col440II",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+98,Primary,SIM_PARTNER_A_S3_098,Partner_A,Country_A,SITE_A_3,Sentinel site 3,SITE_A_3,ST395,Tier4_pansusceptible,RP53,PP6,IncFIA,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+99,Primary,SIM_PARTNER_A_S4_099,Partner_A,Country_A,SITE_A_4,Sentinel site 4,SITE_A_4,ST23,Tier4_pansusceptible,RP54,PP8,IncR,S,S,S,S,S,S,S,S,S,S,R,,,,PASSED
+100,Primary,SIM_PARTNER_A_S5_100,Partner_A,Country_A,SITE_A_5,Sentinel site 5,SITE_A_5,ST512,Tier4_pansusceptible,RP55,PP10,"IncFIB(K), IncR",S,S,S,S,S,S,S,S,S,S,R,,,,PASSED

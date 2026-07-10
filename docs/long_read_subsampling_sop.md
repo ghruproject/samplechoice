@@ -12,9 +12,9 @@ and possible plasmid transmission.
 ## 2. Scope
 
 Use this SOP after short-read sequencing and initial QC are complete. The SOP
-applies to structured survey isolates from Agrosavia, RITM, KIMS, Ibadan, and
-CGPS-supported analyses where long-read sequencing will be used to resolve
-plasmids and mobile genetic elements.
+applies to structured survey isolates from any participating partner site where
+long-read sequencing will be used to resolve plasmids and mobile genetic
+elements.
 
 ## 3. Integrated input dataframe
 
@@ -145,7 +145,7 @@ apply the cutoff with the same order and keep unselected rows as alternates:
 
 ## 8. Human review and deduplication
 
-After scripted ranking, the site and CGPS bioinformatics leads must review the
+After scripted ranking, the site and central bioinformatics leads must review the
 candidate list before sequencing is confirmed.
 
 Required review checks:

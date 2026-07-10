@@ -61,10 +61,10 @@ This writes a ranked long-read selection from
 `examples/simulated_june_priority.csv` and a plasmid set-cover demonstration to
 `outputs/`.
 
-The simulated selection represents one partner run: KIMS has 100 candidate
+The simulated selection represents one partner run: Partner_A has 100 candidate
 isolates across five internal sentinel sites and asks for 25 long-read isolates.
 The selected set deliberately includes all four resistance tiers while remaining
-balanced across the KIMS sentinel sites.
+balanced across the Partner_A sentinel sites.
 
 The script accepts either:
 

@@ -21,7 +21,7 @@ Column names are treated case-insensitively. A header template is provided at:
 
 Partners should normally run the script independently on their own sheet. For a
 partner sheet, `sentinel_site_code` should identify that partner's internal
-sentinel site, such as `KIMS_S1` or `RITM_S3`. If the source file only has
+sentinel site, such as `SITE_A_1` or `SITE_B_3`. If the source file only has
 `laboratory`, the script treats that field as the sentinel-site field.
 
 ## Decision fields needed
