@@ -63,8 +63,8 @@ This writes a ranked long-read selection from
 
 The simulated selection represents one partner run: KIMS has 100 candidate
 isolates across five internal sentinel sites and asks for 25 long-read isolates.
-The selected set contains 25 Tier1_CR isolates, balanced as 5 isolates from each
-KIMS sentinel site.
+The selected set deliberately includes all four resistance tiers while remaining
+balanced across the KIMS sentinel sites.
 
 The script accepts either:
 
@@ -83,6 +83,7 @@ Run the selector on a CSV or Excel file:
 python3 scripts/select_longread_samples.py \
   --input examples/simulated_june_priority.csv \
   --n-select 25 \
+  --tier-targets Tier1_CR=10,Tier2_MDR=8,Tier3_nonMDR_resistant=3,Tier4_pansusceptible=4 \
   --output outputs/simulated_priority.csv
 ```
 
@@ -93,6 +94,7 @@ that sheet exists:
 python3 scripts/select_longread_samples.py \
   --input isolate_priority_longread_2026-05-22.xlsx \
   --n-select 96 \
+  --tier-targets Tier1_CR=40,Tier2_MDR=32,Tier3_nonMDR_resistant=12,Tier4_pansusceptible=12 \
   --output outputs/priority.csv
 ```
 

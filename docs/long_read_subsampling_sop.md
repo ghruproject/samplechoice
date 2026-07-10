@@ -106,8 +106,8 @@ Use the set-cover output as a review layer:
   feasibility checks, or whether the plasmid call is too weak to drive
   sequencing.
 
-Set cover must not override Tier1_CR priority, country/site balance, ST
-deduplication, or feasibility review by itself.
+Set cover must not override the agreed resistance-tier targets, sentinel-site
+balance, ST deduplication, or feasibility review by itself.
 
 ## 6. Primary selection rule
 
@@ -127,9 +127,10 @@ manual review identifies a specific plasmid-analysis reason.
 Rank candidates in this order. When a fixed sequencing capacity is provided,
 apply the cutoff with the same order and keep unselected rows as alternates:
 
-1. tier: Tier1_CR, then Tier2_MDR, then Tier3_nonMDR_resistant, then
-   Tier4_pansusceptible;
-2. primary candidates before secondary candidates;
+1. agreed resistance-tier targets, for example Tier1_CR, Tier2_MDR,
+   Tier3_nonMDR_resistant, and Tier4_pansusceptible all represented according
+   to sequencing capacity and the study objective;
+2. primary candidates before secondary candidates within each tier;
 3. sentinel-site balance, giving priority to sites with fewer already selected
    isolates within the same tier/batch;
 4. plasmid-profile diversity, giving priority to plasmid profiles and `RP x PP`

@@ -41,11 +41,13 @@ sheet:
 python3 scripts/select_longread_samples.py \
   --input isolate_priority_longread_2026-05-22.xlsx \
   --n-select 96 \
+  --tier-targets Tier1_CR=40,Tier2_MDR=32,Tier3_nonMDR_resistant=12,Tier4_pansusceptible=12 \
   --output outputs/priority.csv
 ```
 
 Omit `--n-select` to write the full ranked table without flagging a fixed
-sequencing set.
+sequencing set. Use `--tier-targets` when the final selected set must include
+defined numbers from each resistance tier.
 
 You can still choose a sheet explicitly:
 

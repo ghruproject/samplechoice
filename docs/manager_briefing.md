@@ -31,8 +31,8 @@ fields.
 
 | Decision level | What is prioritised | Why |
 | --- | --- | --- |
-| 1 | AST tier | Carbapenem non-susceptible isolates are the primary long-read target. |
-| 2 | Primary site-profile coverage | Each sentinel site should contribute representative `RP x PP` combinations before duplicates are taken. |
+| 1 | Resistance-tier targets | The selected set should deliberately include Tier1, Tier2, Tier3, and Tier4 isolates; Tier1 remains the highest-priority tier but should not consume the whole set by default. |
+| 2 | Primary site-profile coverage | Within each tier target, each sentinel site should contribute representative `RP x PP` combinations before duplicates are taken. |
 | 3 | Within-partner sentinel-site balance | The selected set should not be dominated by one site with many candidates. |
 | 4 | Plasmid profile | Distinct plasmid profiles are prioritised to support plasmid diversity analysis. |
 | 5 | AMR/virulence flags | Convergent strains and carbapenemase/ESBL signals are retained where data are available. |
@@ -50,7 +50,7 @@ flowchart TD
     B --> C["Build resistance profile (RP)"]
     C --> D["Build or read plasmid profile (PP)"]
     D --> E["Mark primary site x RP x PP representatives"]
-    E --> F["Apply fixed capacity with --n-select"]
+    E --> F["Apply fixed capacity and tier targets"]
     F --> G["Selected isolates plus ranked alternates"]
     G --> H["Manual feasibility and scientific review"]
     H --> I["Confirmed long-read sequencing list"]
@@ -75,6 +75,7 @@ sentinel site code.
 python3 scripts/select_longread_samples.py \
   --input isolate_priority_longread_2026-05-22.xlsx \
   --n-select 96 \
+  --tier-targets Tier1_CR=40,Tier2_MDR=32,Tier3_nonMDR_resistant=12,Tier4_pansusceptible=12 \
   --output outputs/longread_selection_96.csv
 ```
 
@@ -91,7 +92,7 @@ The output keeps every input isolate. It adds:
 | --- | --- |
 | `priority_rank` | Overall ranked order in the full candidate table. |
 | `selection_batch` | `Primary` if this isolate covers a site/profile combination before duplicates; `Secondary` otherwise. |
-| `selected_for_sequencing` | `yes` for isolates inside the requested `--n-select` cutoff. |
+| `selected_for_sequencing` | `yes` for isolates inside the requested `--n-select` cutoff and tier targets. |
 | `selection_rank` | Order in which selected isolates should be processed. |
 | `selection_reason` | Human-readable explanation showing tier, batch, site, plasmid profile, RP, and ST. |
 

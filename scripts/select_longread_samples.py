@@ -306,13 +306,46 @@ def build_priority_table(df: pd.DataFrame, config: dict[str, Any], args: argpars
         audit = df[[id_col] + original_cols_to_keep].rename(columns={id_col: "isolate_id"})
         out = out.merge(audit, on="isolate_id", how="left", suffixes=("", "_input"))
 
+    tier_targets = parse_tier_targets(args.tier_targets) if args.tier_targets else None
+    if tier_targets and args.n_select and sum(tier_targets.values()) != args.n_select:
+        raise SystemExit("--tier-targets must sum to --n-select")
+    if tier_targets and not args.n_select:
+        args.n_select = sum(tier_targets.values())
+
     if args.n_select:
-        out = apply_balanced_cutoff(out, args.n_select)
+        out = apply_balanced_cutoff(out, args.n_select, tier_targets=tier_targets)
 
     return out
 
 
-def apply_balanced_cutoff(priority: pd.DataFrame, n_select: int) -> pd.DataFrame:
+def parse_tier_targets(value: str) -> dict[str, int]:
+    targets = {}
+    for part in value.split(","):
+        if not part.strip():
+            continue
+        if "=" not in part:
+            raise SystemExit("--tier-targets must look like Tier1_CR=10,Tier2_MDR=8")
+        tier, count = part.split("=", 1)
+        tier = tier.strip()
+        try:
+            parsed_count = int(count)
+        except ValueError as exc:
+            raise SystemExit(f"Invalid tier target count: {part}") from exc
+        if parsed_count < 0:
+            raise SystemExit(f"Tier target cannot be negative: {part}")
+        if tier not in TIER_ORDER:
+            raise SystemExit(f"Unknown tier in --tier-targets: {tier}")
+        targets[tier] = parsed_count
+    if not targets:
+        raise SystemExit("--tier-targets did not contain any tier counts")
+    return targets
+
+
+def apply_balanced_cutoff(
+    priority: pd.DataFrame,
+    n_select: int,
+    tier_targets: dict[str, int] | None = None,
+) -> pd.DataFrame:
     if n_select < 1:
         raise SystemExit("--n-select must be at least 1")
 
@@ -329,9 +362,11 @@ def apply_balanced_cutoff(priority: pd.DataFrame, n_select: int) -> pd.DataFrame
     rp_pp_counts: Counter[tuple[str, str]] = Counter()
     st_counts: Counter[str] = Counter()
 
-    while remaining and len(selected) < min(n_select, len(out)):
+    def choose_from_pool(candidate_indexes: set[int]) -> int | None:
+        if not candidate_indexes:
+            return None
         scored = []
-        for idx in remaining:
+        for idx in candidate_indexes:
             row = out.loc[idx]
             tier = str(row["computed_tier"])
             site = str(row["site"])
@@ -361,6 +396,9 @@ def apply_balanced_cutoff(priority: pd.DataFrame, n_select: int) -> pd.DataFrame
             )
 
         _, chosen_idx = min(scored)
+        return chosen_idx
+
+    def select_index(chosen_idx: int) -> None:
         chosen = out.loc[chosen_idx]
         selected.append(chosen_idx)
         remaining.remove(chosen_idx)
@@ -384,6 +422,23 @@ def apply_balanced_cutoff(priority: pd.DataFrame, n_select: int) -> pd.DataFrame
             f"{tier}; {chosen['selection_batch']}; balanced site {site}; "
             f"plasmid profile {pp}; RP {rp}; ST {st}"
         )
+
+    if tier_targets:
+        for tier in sorted(tier_targets, key=lambda t: TIER_ORDER.get(t, 99)):
+            target = tier_targets[tier]
+            while target > 0 and remaining and len(selected) < min(n_select, len(out)):
+                tier_pool = {idx for idx in remaining if str(out.loc[idx, "computed_tier"]) == tier}
+                chosen_idx = choose_from_pool(tier_pool)
+                if chosen_idx is None:
+                    break
+                select_index(chosen_idx)
+                target -= 1
+
+    while remaining and len(selected) < min(n_select, len(out)):
+        chosen_idx = choose_from_pool(remaining)
+        if chosen_idx is None:
+            break
+        select_index(chosen_idx)
 
     out["selection_rank_sort"] = out["selection_rank"].map(lambda x: int(x) if int(x) > 0 else 999999)
     out = out.sort_values(
@@ -478,6 +533,13 @@ def parse_args() -> argparse.Namespace:
         "--n-select",
         type=int,
         help="Number of isolates to flag for sequencing after prioritisation and balanced cutoff.",
+    )
+    parser.add_argument(
+        "--tier-targets",
+        help=(
+            "Comma-separated tier quotas, e.g. "
+            "Tier1_CR=10,Tier2_MDR=8,Tier3_nonMDR_resistant=3,Tier4_pansusceptible=4."
+        ),
     )
     return parser.parse_args()
 

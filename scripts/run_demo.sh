@@ -6,6 +6,7 @@ mkdir -p outputs
 python3 scripts/select_longread_samples.py \
   --input examples/simulated_june_priority.csv \
   --n-select 25 \
+  --tier-targets Tier1_CR=10,Tier2_MDR=8,Tier3_nonMDR_resistant=3,Tier4_pansusceptible=4 \
   --output outputs/simulated_priority.csv
 
 python3 scripts/plasmid_set_cover.py \

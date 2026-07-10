@@ -1,12 +1,15 @@
 # Selection algorithm
 
-The selector ranks the whole input table, then optionally flags the first `N`
-isolates for sequencing with `--n-select`.
+The selector ranks the whole input table, then optionally flags a fixed number
+of isolates for sequencing with `--n-select`. For diversity assessment, use
+`--tier-targets` to reserve places across resistance tiers.
 
 The intended decision order is:
 
-1. **AST tier first.** Apply the June tier definitions: Tier1_CR before
-   Tier2_MDR, then Tier3_nonMDR_resistant, then Tier4_pansusceptible.
+1. **Resistance-tier targets first.** Apply the June tier definitions, then
+   select the requested number from each tier when `--tier-targets` is supplied.
+   This prevents Tier1_CR from consuming the whole long-read set when the study
+   objective is diversity assessment.
 2. **Primary profile coverage before duplicates.** Prefer the first isolate for
    each sentinel-site `RP x PP` combination before repeated candidates.
 3. **Within-partner sentinel-site balance.** Within the same tier and batch,
@@ -29,6 +32,16 @@ The output keeps all isolates. When `--n-select` is used, selected isolates have
 
 This keeps the cutoff auditable. The unselected rows remain available as
 alternates if cultures fail or extra sequencing capacity becomes available.
+
+Example tier-target command:
+
+```bash
+python3 scripts/select_longread_samples.py \
+  --input examples/simulated_june_priority.csv \
+  --n-select 25 \
+  --tier-targets Tier1_CR=10,Tier2_MDR=8,Tier3_nonMDR_resistant=3,Tier4_pansusceptible=4 \
+  --output outputs/simulated_priority.csv
+```
 
 ## Plasmid profile reconstruction
 

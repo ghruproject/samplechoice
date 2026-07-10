@@ -11,6 +11,7 @@ sentinel sites. The example asks for 25 long-read isolates:
 python3 scripts/select_longread_samples.py \
   --input examples/simulated_june_priority.csv \
   --n-select 25 \
+  --tier-targets Tier1_CR=10,Tier2_MDR=8,Tier3_nonMDR_resistant=3,Tier4_pansusceptible=4 \
   --output outputs/simulated_priority.csv
 ```
 
@@ -41,12 +42,14 @@ computed:
 | Tier4_pansusceptible | 19 |
 | Tier3_nonMDR_resistant | 10 |
 
-The selected set contains only Tier1_CR isolates because the requested 25 slots
-are filled before the Tier1_CR candidates are exhausted:
+The selected set deliberately includes all four resistance tiers:
 
 | tier | selected |
 | --- | --- |
-| Tier1_CR | 25 |
+| Tier1_CR | 10 |
+| Tier2_MDR | 8 |
+| Tier3_nonMDR_resistant | 3 |
+| Tier4_pansusceptible | 4 |
 
 ## Selected isolates
 
@@ -62,51 +65,51 @@ are filled before the Tier1_CR candidates are exhausted:
 | 8 | SIM_KIMS_S4_009 | KIMS_S4 | India | Tier1_CR | RP5 | PP3 | ST11 | Primary |
 | 9 | SIM_KIMS_S1_001 | KIMS_S1 | India | Tier1_CR | RP21 | PP2 | ST101 | Primary |
 | 10 | SIM_KIMS_S5_015 | KIMS_S5 | India | Tier1_CR | RP5 | PP15 | ST512 | Primary |
-| 11 | SIM_KIMS_S1_011 | KIMS_S1 | India | Tier1_CR | RP26 | PP7 | ST258 | Primary |
-| 12 | SIM_KIMS_S2_027 | KIMS_S2 | India | Tier1_CR | RP23 | PP9 | ST231 | Primary |
-| 13 | SIM_KIMS_S3_013 | KIMS_S3 | India | Tier1_CR | RP4 | PP11 | ST395 | Primary |
-| 14 | SIM_KIMS_S4_029 | KIMS_S4 | India | Tier1_CR | RP7 | PP13 | ST23 | Primary |
-| 15 | SIM_KIMS_S5_025 | KIMS_S5 | India | Tier1_CR | RP4 | PP5 | ST45 | Primary |
-| 16 | SIM_KIMS_S1_016 | KIMS_S1 | India | Tier1_CR | RP19 | PP2 | ST101 | Primary |
-| 17 | SIM_KIMS_S2_017 | KIMS_S2 | India | Tier1_CR | RP7 | PP4 | ST17 | Primary |
-| 18 | SIM_KIMS_S3_023 | KIMS_S3 | India | Tier1_CR | RP7 | PP1 | ST147 | Primary |
-| 19 | SIM_KIMS_S4_019 | KIMS_S4 | India | Tier1_CR | RP4 | PP8 | ST307 | Primary |
-| 20 | SIM_KIMS_S5_020 | KIMS_S5 | India | Tier1_CR | RP6 | PP10 | ST15 | Primary |
-| 21 | SIM_KIMS_S1_021 | KIMS_S1 | India | Tier1_CR | RP22 | PP12 | ST35 | Primary |
-| 22 | SIM_KIMS_S3_028 | KIMS_S3 | India | Tier1_CR | RP3 | PP11 | ST395 | Primary |
-| 23 | SIM_KIMS_S5_040 | KIMS_S5 | India | Tier1_CR | RP18 | PP5 | ST45 | Primary |
-| 24 | SIM_KIMS_S2_022 | KIMS_S2 | India | Tier1_CR | RP3 | PP14 | ST86 | Primary |
-| 25 | SIM_KIMS_S4_014 | KIMS_S4 | India | Tier1_CR | RP24 | PP13 | ST23 | Primary |
+| 11 | SIM_KIMS_S2_012 | KIMS_S2 | India | Tier2_MDR | RP9 | PP9 | ST231 | Primary |
+| 12 | SIM_KIMS_S3_063 | KIMS_S3 | India | Tier2_MDR | RP8 | PP11 | ST147 | Primary |
+| 13 | SIM_KIMS_S1_046 | KIMS_S1 | India | Tier2_MDR | RP2 | PP7 | ST35 | Primary |
+| 14 | SIM_KIMS_S4_049 | KIMS_S4 | India | Tier2_MDR | RP11 | PP13 | ST11 | Primary |
+| 15 | SIM_KIMS_S5_045 | KIMS_S5 | India | Tier2_MDR | RP11 | PP5 | ST15 | Primary |
+| 16 | SIM_KIMS_S1_051 | KIMS_S1 | India | Tier2_MDR | RP8 | PP2 | ST258 | Primary |
+| 17 | SIM_KIMS_S3_053 | KIMS_S3 | India | Tier2_MDR | RP15 | PP6 | ST395 | Primary |
+| 18 | SIM_KIMS_S4_054 | KIMS_S4 | India | Tier2_MDR | RP2 | PP8 | ST23 | Primary |
+| 19 | SIM_KIMS_S5_080 | KIMS_S5 | India | Tier3_nonMDR_resistant | RP17 | PP15 | ST45 | Primary |
+| 20 | SIM_KIMS_S2_077 | KIMS_S2 | India | Tier3_nonMDR_resistant | RP16 | PP9 | ST86 | Primary |
+| 21 | SIM_KIMS_S3_073 | KIMS_S3 | India | Tier3_nonMDR_resistant | RP12 | PP1 | ST48 | Primary |
+| 22 | SIM_KIMS_S2_072 | KIMS_S2 | India | Tier4_pansusceptible | RP1 | PP14 | ST17 | Primary |
+| 23 | SIM_KIMS_S1_086 | KIMS_S1 | India | Tier4_pansusceptible | RP1 | PP12 | ST101 | Primary |
+| 24 | SIM_KIMS_S4_089 | KIMS_S4 | India | Tier4_pansusceptible | RP1 | PP3 | ST307 | Primary |
+| 25 | SIM_KIMS_S5_100 | KIMS_S5 | India | Tier4_pansusceptible | RP1 | PP10 | ST512 | Primary |
 
 ## Plasmid-profile coverage in the selected set
 
 | plasmid_profile | selected |
 | --- | --- |
 | PP12 | 2 |
-| PP10 | 2 |
-| PP8 | 2 |
 | PP14 | 2 |
+| PP6 | 2 |
+| PP8 | 2 |
+| PP10 | 2 |
 | PP1 | 2 |
-| PP4 | 2 |
+| PP3 | 2 |
 | PP2 | 2 |
-| PP5 | 2 |
-| PP13 | 2 |
-| PP11 | 2 |
-| PP6 | 1 |
-| PP3 | 1 |
-| PP15 | 1 |
+| PP15 | 2 |
+| PP9 | 2 |
+| PP4 | 1 |
+| PP11 | 1 |
 | PP7 | 1 |
-| PP9 | 1 |
+| PP13 | 1 |
+| PP5 | 1 |
 
 ## What this demonstrates
 
 The simulated result shows the intended behaviour:
 
-1. Tier1_CR isolates are selected before lower tiers.
+1. All four resistance tiers are represented according to explicit tier targets.
 2. All five KIMS sentinel sites are equally represented in the 25-isolate
    selected set.
 3. Plasmid profiles are considered before ST duplication becomes relevant.
-4. ST does not override the higher-priority AST, site, and plasmid-profile
+4. ST does not override the higher-priority tier, site, and plasmid-profile
    criteria.
 5. The output keeps the remaining 75 isolates as ranked alternates.
 
