@@ -1,3 +1,8 @@
+> [!IMPORTANT]
+> **Development has moved to GitLab.**
+> The maintained repository is [cgps/ghru/samplechoice](https://gitlab.com/cgps/ghru/samplechoice). Please use GitLab for the latest code, issues, and merge requests.
+> This GitHub copy is retained for existing links and migration checks.
+
 # GHRU Klebsiella long-read sample choice
 
 SOP, demonstration data, and helper scripts for selecting a subsample of
